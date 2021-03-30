@@ -19,6 +19,7 @@
     transition: $shortTransition;
     font-size: 2vw;
     color: $mainRed;
+    display: inline-block
 }
 
 .btn-primary-red:hover {
@@ -38,6 +39,7 @@
     transition: $shortTransition;
     font-size: 2vw;
     color: $mainBlue;
+    width: fit-content;
 }
 
 .btn-primary-blue:hover {

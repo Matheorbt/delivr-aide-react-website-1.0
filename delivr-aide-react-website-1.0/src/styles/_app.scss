@@ -4,6 +4,7 @@
     align-items: center;
     top: 0;
     width: 100%;
+    margin-bottom: 40px;
     margin-top: 20px;
     .navbar-brand {
         height: 150px;
@@ -20,7 +21,7 @@
 
 .introduction-wrapper {
     position: relative;
-    margin-top: 4vw;
+    margin-bottom: 40px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -31,18 +32,21 @@
         align-items: center;
         justify-content: center;
         width: 80vw;
-       .left-column {
+        gap: 40px;
+        margin-bottom: 50px;
+        .left-column {
             display: flex;
             align-items: flex-start;
+            justify-content: space-around;
             flex-direction: column;
             font-family: $mainFont;
             gap: 50px;
             .hero-title {
-                font-size: 3.5vw;
+                font-size: 3.75vw;
                 color: $mainRed;
             }
             .hero-description {
-                font-size: 1.75vw;
+                font-size: 1.25vw;
                 color: $mainGrey;
             }
         }
@@ -50,6 +54,140 @@
             .hero-banner {
                 border-radius: 35px;
                 box-shadow: 7px 7px 17px -1px rgba(0, 0, 0, 0.25);
+            }
+        }
+    }
+    .introduction-sub-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+}
+
+.info-banner {
+    background: linear-gradient(90deg, #3597D3 0%, #E84C3C 100%);
+    border-radius: 169.5px 0px;
+    width: 100%;
+    margin-bottom: 40px;
+    .info-banner-column-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .banner-text {
+            font-family: $mainFont;
+            font-size: 5vw;
+            color: white;
+            margin-left: 7%;
+        }
+        .banner-img {
+            border-radius: 50%;
+            width: 444px;
+            height: 444px;
+            transform: translateY(-15%);
+            margin-right: 7%;
+        }  
+    }
+}
+
+.info-banner-reverse {
+    background: linear-gradient(90deg, #3597D3 0%, #E84C3C 100%);
+    border-radius: 0px 169.5px;
+    width: 100%;
+    margin-bottom: 40px;
+    .info-banner-column-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .banner-text {
+            font-family: $mainFont;
+            font-size: 5vw;
+            color: white;
+            margin-left: 7%;
+        }
+        .banner-img {
+            border-radius: 50%;
+            width: 444px;
+            height: 444px;
+            transform: translateY(-15%);
+            margin-right: 7%;
+        }  
+    }
+}
+
+.available-city {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 20%;
+    margin-bottom: 40px;
+    .france-map-text {
+        font-family: $mainFont;
+        font-size: 3.75vw;
+        color: $mainBlue;
+    }
+}
+
+.delivraide-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+    gap: 10px;
+    @supports (-webkit-text-stroke: 3px $mainBlue) {
+        .delivraide-info-title-stroke {
+            -webkit-text-stroke: 3px $mainBlue;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    .delivraide-info-title {
+        font-family: $mainFont;
+        font-size: 3.75vw;
+        margin-bottom: 25px;
+        .logo-delivr {
+            color: $mainBlue;
+        }
+        .logo-apostrophe {
+            color: black;
+        }
+        .logo-aide {
+            color: $mainRed;
+        }
+    }
+    .delivraide-info-stat-delivery-man {
+        font-family: $mainFont;
+        color: $mainRed;
+        font-size: 3.75vw;
+        @supports (-webkit-text-stroke: 3px $mainRed) {
+            .delivraide-info-stat-stroke {
+                -webkit-text-stroke: 3px $mainRed;
+                -webkit-text-fill-color: transparent;
+                font-size: 10vw;
+            }
+        }
+    }
+    .delivraide-info-stat-availaible-city {
+        font-family: $mainFont;
+        color: $mainRed;
+        font-size: 3.75vw;
+        @supports (-webkit-text-stroke: 3px $mainRed) {
+            .delivraide-info-stat-stroke {
+                -webkit-text-stroke: 3px $mainRed;
+                -webkit-text-fill-color: transparent;
+                font-size: 10vw;
+            }
+        }
+    }
+    .delivraide-info-stat-total-delivery {
+        font-family: $mainFont;
+        color: $mainRed;
+        font-size: 3.75vw;
+        @supports (-webkit-text-stroke: 3px $mainRed) {
+            .delivraide-info-stat-stroke {
+                -webkit-text-stroke: 3px $mainRed;
+                -webkit-text-fill-color: transparent;
+                font-size: 10vw;
             }
         }
     }

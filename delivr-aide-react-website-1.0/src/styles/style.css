@@ -16,6 +16,7 @@
           align-items: center;
   top: 0;
   width: 100%;
+  margin-bottom: 40px;
   margin-top: 20px;
 }
 
@@ -35,7 +36,7 @@
 
 .introduction-wrapper {
   position: relative;
-  margin-top: 4vw;
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,6 +64,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 80vw;
+  gap: 40px;
+  margin-bottom: 50px;
 }
 
 .introduction-wrapper .introduction-column-wrapper .left-column {
@@ -72,6 +75,8 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -81,12 +86,12 @@
 }
 
 .introduction-wrapper .introduction-column-wrapper .left-column .hero-title {
-  font-size: 3.5vw;
+  font-size: 3.75vw;
   color: #E84C3C;
 }
 
 .introduction-wrapper .introduction-column-wrapper .left-column .hero-description {
-  font-size: 1.75vw;
+  font-size: 1.25vw;
   color: #A1A0A0;
 }
 
@@ -96,8 +101,197 @@
           box-shadow: 7px 7px 17px -1px rgba(0, 0, 0, 0.25);
 }
 
-.introduction-wrapper .introduction-btn {
-  margin-right: 20vw;
+.introduction-wrapper .introduction-sub-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info-banner {
+  background: -webkit-gradient(linear, left top, right top, from(#3597D3), to(#E84C3C));
+  background: linear-gradient(90deg, #3597D3 0%, #E84C3C 100%);
+  border-radius: 169.5px 0px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.info-banner .info-banner-column-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.info-banner .info-banner-column-wrapper .banner-text {
+  font-family: "Fredoka One", cursive;
+  font-size: 5vw;
+  color: white;
+  margin-left: 7%;
+}
+
+.info-banner .info-banner-column-wrapper .banner-img {
+  border-radius: 50%;
+  width: 444px;
+  height: 444px;
+  -webkit-transform: translateY(-15%);
+          transform: translateY(-15%);
+  margin-right: 7%;
+}
+
+.info-banner-reverse {
+  background: -webkit-gradient(linear, left top, right top, from(#3597D3), to(#E84C3C));
+  background: linear-gradient(90deg, #3597D3 0%, #E84C3C 100%);
+  border-radius: 0px 169.5px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.info-banner-reverse .info-banner-column-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.info-banner-reverse .info-banner-column-wrapper .banner-text {
+  font-family: "Fredoka One", cursive;
+  font-size: 5vw;
+  color: white;
+  margin-left: 7%;
+}
+
+.info-banner-reverse .info-banner-column-wrapper .banner-img {
+  border-radius: 50%;
+  width: 444px;
+  height: 444px;
+  -webkit-transform: translateY(-15%);
+          transform: translateY(-15%);
+  margin-right: 7%;
+}
+
+.available-city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20%;
+  margin-bottom: 40px;
+}
+
+.available-city .france-map-text {
+  font-family: "Fredoka One", cursive;
+  font-size: 3.75vw;
+  color: #4295D3;
+}
+
+.delivraide-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 40px;
+  gap: 10px;
+}
+
+@supports (-webkit-text-stroke: 3px #4295D3) {
+  .delivraide-info .delivraide-info-title-stroke {
+    -webkit-text-stroke: 3px #4295D3;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.delivraide-info .delivraide-info-title {
+  font-family: "Fredoka One", cursive;
+  font-size: 3.75vw;
+  margin-bottom: 25px;
+}
+
+.delivraide-info .delivraide-info-title .logo-delivr {
+  color: #4295D3;
+}
+
+.delivraide-info .delivraide-info-title .logo-apostrophe {
+  color: black;
+}
+
+.delivraide-info .delivraide-info-title .logo-aide {
+  color: #E84C3C;
+}
+
+.delivraide-info .delivraide-info-stat-delivery-man {
+  font-family: "Fredoka One", cursive;
+  color: #E84C3C;
+  font-size: 3.75vw;
+}
+
+@supports (-webkit-text-stroke: 3px #E84C3C) {
+  .delivraide-info .delivraide-info-stat-delivery-man .delivraide-info-stat-stroke {
+    -webkit-text-stroke: 3px #E84C3C;
+    -webkit-text-fill-color: transparent;
+    font-size: 10vw;
+  }
+}
+
+.delivraide-info .delivraide-info-stat-availaible-city {
+  font-family: "Fredoka One", cursive;
+  color: #E84C3C;
+  font-size: 3.75vw;
+}
+
+@supports (-webkit-text-stroke: 3px #E84C3C) {
+  .delivraide-info .delivraide-info-stat-availaible-city .delivraide-info-stat-stroke {
+    -webkit-text-stroke: 3px #E84C3C;
+    -webkit-text-fill-color: transparent;
+    font-size: 10vw;
+  }
+}
+
+.delivraide-info .delivraide-info-stat-total-delivery {
+  font-family: "Fredoka One", cursive;
+  color: #E84C3C;
+  font-size: 3.75vw;
+}
+
+@supports (-webkit-text-stroke: 3px #E84C3C) {
+  .delivraide-info .delivraide-info-stat-total-delivery .delivraide-info-stat-stroke {
+    -webkit-text-stroke: 3px #E84C3C;
+    -webkit-text-fill-color: transparent;
+    font-size: 10vw;
+  }
 }
 
 .btn-primary-red {
@@ -114,6 +308,7 @@
   transition: all 0.25s ease-in-out;
   font-size: 2vw;
   color: #E84C3C;
+  display: inline-block;
 }
 
 .btn-primary-red:hover {
@@ -136,6 +331,9 @@
   transition: all 0.25s ease-in-out;
   font-size: 2vw;
   color: #4295D3;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .btn-primary-blue:hover {
