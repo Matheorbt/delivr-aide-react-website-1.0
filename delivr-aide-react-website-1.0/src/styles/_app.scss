@@ -192,3 +192,14 @@
         }
     }
 }
+
+.caroussel-container {
+    width: 75vw;
+    margin-left: 15vw;
+    .slide-img {
+        height: 80vh;
+    }
+    .slide-img:hover {
+        cursor: pointer;
+    }
+}

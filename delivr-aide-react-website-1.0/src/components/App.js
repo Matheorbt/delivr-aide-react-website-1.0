@@ -1,15 +1,28 @@
 import React from 'react'
-import Glider, { GliderMethods } from 'react-glider';
+import Slider from "react-slick";
 import logo from '../props/logo/logo.png';
 import heroCover from '../props/img/delivery-bag.jpeg'
 import freshProduct from '../props/img/fresh-product.png'
 import hygieneProduct from '../props/img/produit_hygiene.jpg'
 import franceMap from '../props/img/map-france-pin.png'
+import groupTestOne from '../props/img/group-test.jpg'
+import groupTestTwo from '../props/img/group-test-2.jpg'
+import groupTestThree from '../props/img/group-test-3.jpg'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
     var deliveryMan = 14;
     var cityAvailaible = 6;
     var totalDelivery = 200;
+    const settings = {
+        dots: true,
+        arrows: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    };
     return (
         <>
             <nav className="navbar-wrapper">
@@ -55,6 +68,13 @@ function App() {
                 <p className="delivraide-info-stat-total-delivery"><span className="delivraide-info-stat-stroke">{totalDelivery}</span> Livraisons</p>
                 <p className="delivraide-info-title"><span className="logo-delivr">Delivr</span><span className="logo-apostrophe">'</span><span className="logo-aide">aide</span><span className="delivraide-info-title-stroke"> c'est surtout</span></p>
             </section>
+            <div className="caroussel-container">
+                <Slider {...settings}>
+                    <img className="slide-img one" src={groupTestOne} alt="grouptest" />
+                    <img className="slide-img two" src={groupTestTwo} alt="grouptest" />
+                    <img className="slide-img three" src={groupTestThree} alt="grouptest" />
+                </Slider>
+            </div>
         </>
     )
 }
