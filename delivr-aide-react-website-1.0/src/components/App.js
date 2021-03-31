@@ -1,13 +1,23 @@
 import React from 'react'
 import Slider from "react-slick";
+
+//Image
 import logo from '../props/logo/logo.png';
 import heroCover from '../props/img/delivery-bag.jpeg'
 import freshProduct from '../props/img/fresh-product.png'
 import hygieneProduct from '../props/img/produit_hygiene.jpg'
 import franceMap from '../props/img/map-france-pin.png'
-import groupTestOne from '../props/img/group-test.jpg'
-import groupTestTwo from '../props/img/group-test-2.jpg'
-import groupTestThree from '../props/img/group-test-3.jpg'
+import conditionIllustration from '../props/img/condition-svg.svg'
+
+//Caroussel picture
+import carousselOne from '../props/img/caroussel-1.png'
+import carousselTwo from '../props/img/caroussel-2.png'
+import carousselThree from '../props/img/caroussel-3.png'
+import carousselFour from '../props/img/caroussel-4.png'
+import carousselFive from '../props/img/caroussel-5.png'
+import carousselSix from '../props/img/caroussel-6.png'
+import carousselSeven from '../props/img/caroussel-7.png'
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -70,10 +80,26 @@ function App() {
             </section>
             <div className="caroussel-container">
                 <Slider {...settings}>
-                    <img className="slide-img one" src={groupTestOne} alt="grouptest" />
-                    <img className="slide-img two" src={groupTestTwo} alt="grouptest" />
-                    <img className="slide-img three" src={groupTestThree} alt="grouptest" />
+                    <img className="slide-img four" src={carousselFour} alt="grouptest" />
+
+                    <img className="slide-img two" src={carousselTwo} alt="grouptest" />
+                    <img className="slide-img six" src={carousselSix} alt="grouptest" />
+                    <img className="slide-img three" src={carousselThree} alt="grouptest" />
+                    <img className="slide-img five" src={carousselFive} alt="grouptest" />
+                    <img className="slide-img seven" src={carousselSeven} alt="grouptest" />
+                    <img className="slide-img one" src={carousselOne} alt="grouptest" />
                 </Slider>
+            </div>
+            <div className="info-banner banner-conditions">
+                <div className="info-banner-column-wrapper">
+                    <img className="checklist-illustration" alt="checklist" src={conditionIllustration}></img>
+                    <div className="info-banner-avantage">
+                        <p className="banner-text-avantage-hero">Les avantages</p>
+                        <p className="banner-text-avantage">Pas besoin de se déplacer 😏</p>
+                        <p className="banner-text-avantage">Pas de frais 😇</p>
+                        <p className="banner-text-avantage">Nous demandons juste une carte étudiante 😉</p>
+                    </div>
+                </div>
             </div>
         </>
     )

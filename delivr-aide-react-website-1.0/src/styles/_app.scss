@@ -27,6 +27,9 @@
     justify-content: flex-start;
     flex-direction: column;
     width: 100%;
+    .introduction-btn {
+        margin-bottom: 45px;
+    }
     .introduction-column-wrapper {
         display: flex;
         align-items: center;
@@ -194,12 +197,34 @@
 }
 
 .caroussel-container {
-    width: 75vw;
-    margin-left: 15vw;
+    width: 480px;
+    margin-left: 37vw;
+    margin-bottom: 40px;
     .slide-img {
         height: 80vh;
+        border-radius: 25px;
     }
     .slide-img:hover {
         cursor: pointer;
+    }
+}
+
+
+.info-banner-column-wrapper {
+    .checklist-illustration {
+        width: 32vw;
+        height: 40vw;
+    }
+    .banner-text-avantage-hero {
+        font-size: 3.5vw;
+    }
+    .info-banner-avantage {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-family: $mainFont;
+        color: white;
+        font-size: 2.5vw;
     }
 }
