@@ -83,7 +83,6 @@ function App() {
             <div className="caroussel-container">
                 <Slider {...settings}>
                     <img className="slide-img four" src={carousselFour} alt="grouptest" />
-
                     <img className="slide-img two" src={carousselTwo} alt="grouptest" />
                     <img className="slide-img six" src={carousselSix} alt="grouptest" />
                     <img className="slide-img three" src={carousselThree} alt="grouptest" />

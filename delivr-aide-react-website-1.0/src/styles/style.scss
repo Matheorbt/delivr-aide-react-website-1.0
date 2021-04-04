@@ -48,3 +48,12 @@
     box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0.0);
     cursor: pointer;
 }
+
+@media only screen and (max-device-width: 1400px)  {
+    .btn-primary-red  {
+        font-size: 3.5vw;
+    }
+    .btn-primary-blue  {
+        font-size: 3.5vw;
+    }
+}

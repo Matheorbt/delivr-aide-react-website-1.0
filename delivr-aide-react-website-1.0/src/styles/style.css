@@ -22,11 +22,11 @@
 }
 
 .navbar-wrapper .navbar-brand {
-  height: 150px;
-  width: 665px;
+  height: 11.2vw;
+  width: 50vw;
   -ms-flex-line-pack: end;
       align-content: flex-end;
-  margin-left: 30%;
+  margin-left: auto;
 }
 
 .navbar-wrapper .btn-nav {
@@ -88,6 +88,7 @@
           flex-direction: column;
   font-family: "Fredoka One", cursive;
   gap: 50px;
+  width: 50vw;
 }
 
 .introduction-wrapper .introduction-column-wrapper .left-column .hero-title {
@@ -116,6 +117,7 @@
           animation-duration: 1s;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
+  width: 50vw;
 }
 
 .introduction-wrapper .introduction-sub-wrapper {
@@ -395,6 +397,81 @@
     -webkit-transform: translateY(0);
             transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media only screen and (max-device-width: 1400px) {
+  .introduction-wrapper .introduction-column-wrapper .left-column .hero-title {
+    font-size: 6vw;
+  }
+  .introduction-wrapper .introduction-column-wrapper .left-column .hero-description {
+    font-size: 3vw;
+  }
+  .introduction-sub-wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .introduction-column-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info-banner-column-wrapper {
+    padding-top: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px;
+    text-align: center;
+  }
+  .info-banner .info-banner-column-wrapper .banner-img {
+    margin-right: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    margin-bottom: 40px;
+  }
+  .available-city {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .france-map-img {
+    width: 80vw;
+    height: 80vw;
+  }
+  .france-map-text {
+    font-size: 6vw;
+  }
+  .info-banner-reverse .info-banner-column-wrapper .banner-text {
+    padding-top: 20px;
+    gap: 50px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .info-banner-reverse .info-banner-column-wrapper .banner-img {
+    margin-right: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    margin-bottom: 40px;
+  }
+  .delivraide-info .delivraide-info-title {
+    font-size: 5vw;
+  }
+  .info-banner-column-wrapper .banner-text-avantage-hero {
+    font-size: 5vw;
+  }
+  .info-banner-column-wrapper .checklist-illustration {
+    width: 90vw;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .info-banner-avantage p {
+    font-size: 4vw;
+    margin-bottom: 40px;
   }
 }
 
@@ -700,5 +777,14 @@
   -webkit-box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0);
           box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0);
   cursor: pointer;
+}
+
+@media only screen and (max-device-width: 1400px) {
+  .btn-primary-red {
+    font-size: 3.5vw;
+  }
+  .btn-primary-blue {
+    font-size: 3.5vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */
