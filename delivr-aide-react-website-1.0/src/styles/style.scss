@@ -27,6 +27,7 @@
 .btn-primary-red:hover {
     box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0.0);
     cursor: pointer;
+    opacity: 0.9;
 }
 
 .btn-primary-blue {
@@ -47,6 +48,7 @@
 .btn-primary-blue:hover {
     box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0.0);
     cursor: pointer;
+    opacity: 0.9;
 }
 
 @media only screen and (max-device-width: 1400px)  {

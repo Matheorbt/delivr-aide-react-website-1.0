@@ -7,7 +7,8 @@ import heroCover from '../props/img/delivery-bag.jpeg'
 import freshProduct from '../props/img/fresh-product.png'
 import hygieneProduct from '../props/img/produit_hygiene.jpg'
 import franceMap from '../props/img/map-france-pin.png'
-import conditionIllustration from '../props/img/condition-svg.svg'
+import conditionIllustration from '../props/svg/condition-svg.svg'
+import heart from '../props/svg/heart.svg'
 
 //Caroussel picture
 import carousselOne from '../props/img/caroussel-1.png'
@@ -102,6 +103,30 @@ function App() {
                     </div>
                 </div>
             </div>
+            <section className="delivraide-donation">
+                <div className="donation-wrapper">
+                    <div className="donation-column-wrapper">
+                        <div className="donation-parapgraph">
+                            <p className="donation-title">Envie de faire un don ?</p>
+                            <p className="donation-description">Vos dons nous permettent de louer des locaux dans les différentes villes <br /> où nous sommes implantés afin de vous proposez de plus en plus d’aide.</p>
+                        </div>
+                        <img src={heart} alt="heart" className="donation-heart-illustration"></img>
+                    </div>
+                    <a className="btn-primary-red" href="https://www.helloasso.com/associations/l-equipage-solidaire/formulaires/2" target="_blank">Faire un don</a>
+                </div>
+                <section className="conclusion">
+                    <section className="recap">
+                        <p className="recap-hero-title">Convaincu ?</p>
+                        <button className="btn-primary-blue">Recevoir mon kit !</button>
+                        <p className="recap-sub-title">Envie de nous soutenir ?</p>
+                        <p className="recap-sub-title">Tu es étudiant avec un moyen de locomotion ?</p>
+                        <button className="btn-primary-red">Devenir Livreur</button>
+                        <p className="recap-sub-title">Tu tiens un commerce et tu vends des denrées alimentaire <br /> ou des produits de prémière nécessité ?</p>
+                        <button className="btn-primary-blue">Devenir Donateur</button>
+                    </section>
+                    <footer></footer>
+                </section>
+            </section>
         </>
     )
 }

@@ -237,6 +237,70 @@
     }
 }
 
+.donation-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+    .donation-column-wrapper {
+        width: 90vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .donation-title {
+        font-size: 3.75vw;
+        font-family: $mainFont;
+        color: $mainBlue;
+    }
+    .donation-description {
+        font-size: 1.25vw;
+        font-family: $mainFont;
+        color: #A1A0A0;
+    }
+    .donation-parapgraph {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .donation-heart-illustration {
+        height: 27.5vw;
+        width: 27.5vw;
+    }
+}
+
+.conclusion {
+    background: linear-gradient(180deg, #3597D3 0%, #000000 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .recap {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 40px;
+    }
+    .recap-hero-title {
+        font-size: 3.75vw;
+        font-family: $mainFont;
+        color: white;
+    }
+    .recap-sub-title {
+        font-size: 3vw;
+        font-family: $mainFont;
+        color: white;
+    }
+}
+
+
+
 @keyframes fadeIn {
     from {
         opacity: 0;
