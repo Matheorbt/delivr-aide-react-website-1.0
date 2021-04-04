@@ -279,7 +279,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     .recap {
+        width: 90vw;
         display: flex;
         align-items: flex-start;
         justify-content: center;
@@ -296,6 +298,67 @@
         font-size: 3vw;
         font-family: $mainFont;
         color: white;
+    }
+    footer {
+        width: 100%;
+        .footer-column-wrapper {
+            font-family: $mainFont;
+            color: white;
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-around;
+            .footer-left-column {
+                .footer-contact-section {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    gap: 20px;
+                    .contact-logo {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap:50px;
+                    }
+                    .mail-logo {
+                        transition: $shortTransition;
+                    }
+                    .instagram-logo {
+                        transition: $shortTransition;
+                    }
+                    .mail-logo:hover {
+                        opacity: 0.8;
+                        cursor: pointer;
+                    }
+                    .instagram-logo:hover {
+                        opacity: 0.8;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .footer-contact-title {
+                font-size: 3vw;
+            }
+            .footer-contact-description {
+                font-size: 1.5vw;
+            }
+        }
+        .footer-copyright {
+            font-size: 1vw;
+            font-family: $mainFont;
+            color: white;
+            text-align: center;
+        }
+    }
+    hr {
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 1px;
+        width: 90vw;
     }
 }
 

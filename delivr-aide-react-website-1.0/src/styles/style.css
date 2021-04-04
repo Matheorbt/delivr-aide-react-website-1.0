@@ -437,9 +437,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .conclusion .recap {
+  width: 90vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -467,6 +472,97 @@
   font-size: 3vw;
   font-family: "Fredoka One", cursive;
   color: white;
+}
+
+.conclusion footer {
+  width: 100%;
+}
+
+.conclusion footer .footer-column-wrapper {
+  font-family: "Fredoka One", cursive;
+  color: white;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.conclusion footer .footer-column-wrapper .footer-left-column .footer-contact-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.conclusion footer .footer-column-wrapper .footer-left-column .footer-contact-section .contact-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+}
+
+.conclusion footer .footer-column-wrapper .footer-left-column .footer-contact-section .mail-logo {
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.conclusion footer .footer-column-wrapper .footer-left-column .footer-contact-section .instagram-logo {
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.conclusion footer .footer-column-wrapper .footer-left-column .footer-contact-section .mail-logo:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.conclusion footer .footer-column-wrapper .footer-left-column .footer-contact-section .instagram-logo:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.conclusion footer .footer-column-wrapper .footer-contact-title {
+  font-size: 3vw;
+}
+
+.conclusion footer .footer-column-wrapper .footer-contact-description {
+  font-size: 1.5vw;
+}
+
+.conclusion footer .footer-copyright {
+  font-size: 1vw;
+  font-family: "Fredoka One", cursive;
+  color: white;
+  text-align: center;
+}
+
+.conclusion hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 90vw;
 }
 
 @-webkit-keyframes fadeIn {

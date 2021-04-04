@@ -9,6 +9,9 @@ import hygieneProduct from '../props/img/produit_hygiene.jpg'
 import franceMap from '../props/img/map-france-pin.png'
 import conditionIllustration from '../props/svg/condition-svg.svg'
 import heart from '../props/svg/heart.svg'
+import instagramLogo from '../props/svg/instagram_logo.svg'
+import mailLetter from '../props/svg/mail-letter.svg'
+import logoFooter from '../props/img/logo-footer.png'
 
 //Caroussel picture
 import carousselOne from '../props/img/caroussel-1.png'
@@ -124,7 +127,25 @@ function App() {
                         <p className="recap-sub-title">Tu tiens un commerce et tu vends des denrées alimentaire <br /> ou des produits de prémière nécessité ?</p>
                         <button className="btn-primary-blue">Devenir Donateur</button>
                     </section>
-                    <footer></footer>
+                    <footer>
+                        <div className="footer-column-wrapper">
+                            <div className="footer-left-column">
+                                <div className="footer-contact-section">
+                                    <p className="footer-contact-title">Contact</p>
+                                    <p className="footer-contact-description">Des question ? <br /> nous avons les réponses</p>
+                                    <div className="contact-logo">
+                                        <img className="instagram-logo" src={instagramLogo} alt="instagram"></img>
+                                        <img className="mail-logo" src={mailLetter} alt="mail letter"></img>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="footer-right-column">
+                                <img src={logoFooter} alt="delivraide logo"></img>
+                            </div>
+                        </div>
+                        <hr></hr>
+                        <p className="footer-copyright">Copyright ©{(new Date().getFullYear())} Delivr'aide. All Rights Reserved</p>
+                    </footer>
                 </section>
             </section>
         </>
