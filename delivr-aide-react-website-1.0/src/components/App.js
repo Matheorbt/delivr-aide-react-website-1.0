@@ -84,16 +84,18 @@ function App() {
                 <p className="delivraide-info-stat-total-delivery"><span className="delivraide-info-stat-stroke">{totalDelivery}</span> Livraisons</p>
                 <p className="delivraide-info-title"><span className="logo-delivr">Delivr</span><span className="logo-apostrophe">'</span><span className="logo-aide">aide</span><span className="delivraide-info-title-stroke"> c'est surtout</span></p>
             </section>
-            <div className="caroussel-container">
-                <Slider {...settings}>
-                    <img className="slide-img four" src={carousselFour} alt="grouptest" />
-                    <img className="slide-img two" src={carousselTwo} alt="grouptest" />
-                    <img className="slide-img six" src={carousselSix} alt="grouptest" />
-                    <img className="slide-img three" src={carousselThree} alt="grouptest" />
-                    <img className="slide-img five" src={carousselFive} alt="grouptest" />
-                    <img className="slide-img seven" src={carousselSeven} alt="grouptest" />
-                    <img className="slide-img one" src={carousselOne} alt="grouptest" />
-                </Slider>
+            <div className="caroussel-container-wrapper">
+                <div className="caroussel-container">
+                    <Slider {...settings}>
+                        <img className="slide-img four" src={carousselFour} alt="grouptest" />
+                        <img className="slide-img two" src={carousselTwo} alt="grouptest" />
+                        <img className="slide-img six" src={carousselSix} alt="grouptest" />
+                        <img className="slide-img three" src={carousselThree} alt="grouptest" />
+                        <img className="slide-img five" src={carousselFive} alt="grouptest" />
+                        <img className="slide-img seven" src={carousselSeven} alt="grouptest" />
+                        <img className="slide-img one" src={carousselOne} alt="grouptest" />
+                    </Slider>
+                </div>
             </div>
             <div className="info-banner banner-conditions">
                 <div className="info-banner-column-wrapper">

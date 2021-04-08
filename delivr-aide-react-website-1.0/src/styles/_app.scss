@@ -204,9 +204,13 @@
     }
 }
 
+.caroussel-container-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .caroussel-container {
     width: 480px;
-    margin-left: 37vw;
     margin-bottom: 40px;
     .slide-img {
         height: 80vh;
