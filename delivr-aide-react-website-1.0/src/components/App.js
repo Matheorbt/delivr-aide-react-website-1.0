@@ -115,7 +115,7 @@ function App() {
                         </div>
                         <img src={heart} alt="heart" className="donation-heart-illustration"></img>
                     </div>
-                    <a className="btn-primary-red" href="https://www.helloasso.com/associations/l-equipage-solidaire/formulaires/2" target="_blank">Faire un don</a>
+                    <a className="btn-primary-red" href="https://www.helloasso.com/associations/l-equipage-solidaire/formulaires/2" target="_blank" rel="noreferrer">Faire un don</a>
                 </div>
                 <section className="conclusion">
                     <section className="recap">

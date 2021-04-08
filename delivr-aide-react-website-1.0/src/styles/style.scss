@@ -59,3 +59,22 @@
         font-size: 3.5vw;
     }
 }
+
+
+@media only screen and (max-device-width: 400px)  {
+    .btn-primary-red  {
+        font-size: 5vw;
+    }
+    .btn-primary-blue  {
+        font-size: 5vw;
+    }
+    .introduction-wrapper .introduction-btn {
+        margin-bottom: 20px;
+    }
+    .navbar-wrapper .btn-nav {
+        display: none;
+    }
+    .navbar-wrapper .navbar-brand {
+        margin-left: 0;
+    }
+}
