@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden
+}
+
 @import 'variables';
 @import 'app';
 @import 'slick';
