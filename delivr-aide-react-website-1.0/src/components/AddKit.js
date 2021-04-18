@@ -1,9 +1,17 @@
 import React from 'react'
 import '../styles/style.css';
+import { useEffect } from "react";
 
 function AddKit() {
+    function ScrollToTopOnMount() {
+        useEffect(() => {
+            window.scrollTo(0, 0);
+        }, []);
+        return null;
+    }
     return (
         <>
+            <ScrollToTopOnMount />
             <div className="main-wrapper-flex">
                 <div className="main-wrapper-add-kit">
                     <div className="form-main-wrapper">

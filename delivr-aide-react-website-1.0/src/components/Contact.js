@@ -1,9 +1,17 @@
 import React from 'react'
 import logo from '../props/logo/logo-delivraide-app-landing.png'
+import { useEffect } from "react";
 
 function Contact() {
+    function ScrollToTopOnMount() {
+        useEffect(() => {
+            window.scrollTo(0, 0);
+        }, []);
+        return null;
+    }
     return (
         <>
+            <ScrollToTopOnMount />
             <div className="contact-bg">
                 <div className="contact-navbar">
                     <a href="/">
