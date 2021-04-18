@@ -15,7 +15,6 @@ function PageNotFound() {
                     <p className="not-found-text">Aller, on retourne sur la page d'accueil👋<br /><span>(ps: clic sur le logo 😉)</span></p>
                 </div>
             </div>
-
         </>
     )
 }

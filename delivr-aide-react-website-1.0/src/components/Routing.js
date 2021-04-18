@@ -15,6 +15,7 @@ import Contact from './Contact'
 import App from './App'
 import AddDeliveryMan from './AddDeliveryMan'
 import AddDonator from './AddDonator'
+import HiddenSection from './HiddenSection'
 
 function Routing() {
     return (
@@ -41,6 +42,9 @@ function Routing() {
                     </Route>
                     <Route path="/addkit">
                         <AddKit />
+                    </Route>
+                    <Route path="/yovann">
+                        <HiddenSection />
                     </Route>
                     <Route path="*">
                         <PageNotFound />

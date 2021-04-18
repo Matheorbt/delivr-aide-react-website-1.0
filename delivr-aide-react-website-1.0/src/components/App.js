@@ -1,12 +1,7 @@
 import React from 'react'
 import Slider from "react-slick";
 import AOS from 'aos';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 //Image
 import logo from '../props/logo/logo.png';
