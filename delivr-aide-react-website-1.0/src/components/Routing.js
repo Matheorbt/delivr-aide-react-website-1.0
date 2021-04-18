@@ -11,7 +11,10 @@ import AddKit from './AddKit'
 import Charte from './Charte'
 import Politique from './Politique'
 import PageNotFound from './PageNotFound'
+import Contact from './Contact'
 import App from './App'
+import AddDeliveryMan from './AddDeliveryMan'
+import AddDonator from './AddDonator'
 
 function Routing() {
     return (
@@ -21,8 +24,17 @@ function Routing() {
                     <Route exact path="/">
                         <App />
                     </Route>
+                    <Route exact path="/contact">
+                        <Contact />
+                    </Route>
                     <Route path="/politique">
                         <Politique />
+                    </Route>
+                    <Route path="/donator">
+                        <AddDonator />
+                    </Route>
+                    <Route path="/deliveryman">
+                        <AddDeliveryMan />
                     </Route>
                     <Route path="/charte">
                         <Charte />

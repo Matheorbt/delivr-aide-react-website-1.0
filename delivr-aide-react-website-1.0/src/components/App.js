@@ -1,6 +1,12 @@
 import React from 'react'
 import Slider from "react-slick";
 import AOS from 'aos';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 
 //Image
 import logo from '../props/logo/logo.png';
@@ -47,7 +53,7 @@ function App() {
         <>
             <nav className="navbar-wrapper">
                 <img src={logo} alt="delivr'aide logo" className="navbar-brand" />
-                <button className="btn-primary-red btn-nav">Nous contacter !</button>
+                <Link to="/contact" className="btn-primary-red btn-nav">Nous contacter !</Link>
             </nav>
             <div className="introduction-wrapper">
                 <div className="introduction-sub-wrapper">
@@ -62,7 +68,7 @@ function App() {
                             <img src={heroCover} alt="delivr'aide logo" className="hero-banner" />
                         </div>
                     </section>
-                    <button className="btn-primary-blue introduction-btn">Recevoir mon kit !</button>
+                    <Link to="/addkit" className="btn-primary-blue introduction-btn">Recevoir mon kit !</Link>
                 </div>
             </div>
             <div className="info-banner banner-fresh-product">
@@ -126,12 +132,12 @@ function App() {
                 <section className="conclusion">
                     <section className="recap">
                         <p className="recap-hero-title" data-aos="fade-right">Convaincu ?</p>
-                        <button to="/addkit" className="btn-primary-blue" data-aos="fade-right" data-aos-duration="2100">Recevoir mon kit !</button>
+                        <Link to="/addkit" className="btn-primary-blue" data-aos="fade-right" data-aos-duration="2100">Recevoir mon kit !</Link>
                         <p className="recap-sub-title" data-aos="fade-right" data-aos-duration="2200">Envie de nous soutenir ?</p>
                         <p className="recap-sub-title" data-aos="fade-right" data-aos-duration="2300">Tu es étudiant avec un moyen de locomotion ?</p>
-                        <button className="btn-primary-red" data-aos="fade-right" data-aos-duration="2400">Devenir Livreur</button>
+                        <Link to="/deliveryman" className="btn-primary-red" data-aos="fade-right" data-aos-duration="2400">Devenir Livreur</Link>
                         <p className="recap-sub-title" data-aos="fade-right" data-aos-duration="2500">Tu tiens un commerce et tu vends des denrées alimentaire <br /> ou des produits de prémière nécessité ?</p>
-                        <button className="btn-primary-blue" data-aos="fade-right" data-aos-duration="2600">Devenir Donateur</button>
+                        <Link to="/donator" className="btn-primary-blue" data-aos="fade-right" data-aos-duration="2600">Devenir Donateur</Link>
                     </section>
                     <footer>
                         <div className="footer-column-wrapper">
