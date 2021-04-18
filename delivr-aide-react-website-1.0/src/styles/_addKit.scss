@@ -1,0 +1,206 @@
+:root {
+    --main-font: 'Fredoka One', cursive;
+    --main-font-color: white;
+}
+
+.main-wrapper-flex {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    .main-wrapper-add-kit {
+        background: linear-gradient(180deg, #FC3A2F 0%, #0098D9 100%);
+        box-shadow: 4px 7px 18px 6px rgba(0, 0, 0, 0.25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 10vh;
+        .form-main-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            grid-gap: 40px;
+            gap: 40px;
+            .add-kit-hero-title {
+                margin-top: 10vh;
+                color: var(--main-font-color);
+                font-family: var(--main-font);
+                font-size: 3vw;
+            }
+            .form-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                grid-gap: 40px;
+                gap: 40px;
+                .form-firstname-lastname {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: row;
+                    grid-gap: 40px;
+                    gap: 40px;
+                }
+                .form-city-info {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: row;
+                    grid-gap: 40px;
+                    gap: 40px;
+                }
+                .form-first-name {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: column;
+                    grid-gap: 25px;
+                    gap: 25px;
+                }
+                .form-city-name {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 25px;
+                }
+                .form-zip-code {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: column;
+                    grid-gap: 25px;
+                    gap: 25px;
+                }
+                .form-number {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: column;
+                    grid-gap: 25px;
+                    gap: 25px;
+                }
+                .form-email {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: column;
+                    grid-gap: 40px;
+                    gap: 40px;
+                }
+                .form-account-connexion {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: row;
+                    grid-gap: 40px;
+                    gap: 40px;
+                }
+                .form-submit {
+                    background: transparent;
+                    all: unset;
+                    border-radius: 25px;
+                    font-family: var(--main-font);
+                    font-size: 2vw;
+                    padding: 15px;
+                    background: transparent;
+                    border: 4px solid transparent;
+                    align-self: center;
+                    box-shadow: 4px 7px 18px 6px rgba(0, 0, 0, 0.25);
+                    border: 4px solid var(--main-font-color);
+                    transition: all 0.25s ease-in-out;
+                    color: var(--main-font-color);
+                }
+                .form-submit:hover {
+                    background: var(--main-font-color);
+                    color: black;
+                    cursor: pointer;
+                }
+            }
+            .politique-div {
+                width: 90%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                gap: 20px;
+            }
+            #confidentialité {
+                all: unset;
+                padding: 20px;
+                border-radius: 50%;
+                background: white;
+                border: 4px solid transparent;
+                transition: all 0.25s ease-in-out;
+            }
+            #confidentialité:hover {
+                cursor: pointer;
+            }
+            #confidentialité:checked {
+                border: 4px solid white;
+                background: $mainRed;
+            }
+        }
+    }
+}
+
+.form-last-name {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    grid-gap: 25px;
+    gap: 25px;
+}
+
+.form-wrapper label {
+    font-family: var(--main-font);
+    color: var(--main-font-color);
+    font-size: 2vw;
+}
+
+.form-wrapper input:not(.form-submit) {
+    all: unset;
+    border: 4px solid var(--main-font-color);
+    border-radius: 25px;
+    font-family: var(--main-font);
+    color: var(--main-font-color);
+    font-size: 2vw;
+    padding: 15px;
+    background: var(--main-font-color);
+    transition: all 0.25s ease-in-out;
+    color: black;
+    box-shadow: 4px 7px 18px 6px rgba(0, 0, 0, 0.25);
+}
+
+.form-wrapper input:focus {
+    outline: none;
+    background: transparent;
+    color: var(--main-font-color);
+    border: 4px solid var(--main-font-color);
+}
+
+@media only screen and (max-width: 1000px) {
+    .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .add-kit-hero-title {
+        font-size: 8vw;
+    }
+    .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper label {
+        font-size: 7vw;
+    }
+    .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-firstname-lastname {
+        flex-direction: column;
+    }
+    .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-city-info {
+        flex-direction: column;
+    }
+    .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-account-connexion {
+        flex-direction: column;
+    }
+    .form-wrapper input:not(.form-submit) {
+        font-size: 6vw;
+    }
+    .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-submit {
+        font-size: 8vw;
+    }
+}

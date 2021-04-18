@@ -126,7 +126,7 @@ function App() {
                 <section className="conclusion">
                     <section className="recap">
                         <p className="recap-hero-title" data-aos="fade-right">Convaincu ?</p>
-                        <button className="btn-primary-blue" data-aos="fade-right" data-aos-duration="2100">Recevoir mon kit !</button>
+                        <button to="/addkit" className="btn-primary-blue" data-aos="fade-right" data-aos-duration="2100">Recevoir mon kit !</button>
                         <p className="recap-sub-title" data-aos="fade-right" data-aos-duration="2200">Envie de nous soutenir ?</p>
                         <p className="recap-sub-title" data-aos="fade-right" data-aos-duration="2300">Tu es étudiant avec un moyen de locomotion ?</p>
                         <button className="btn-primary-red" data-aos="fade-right" data-aos-duration="2400">Devenir Livreur</button>
