@@ -130,9 +130,9 @@ function App() {
                         <Link to="/addkit" className="btn-primary-blue" data-aos="fade-right" data-aos-duration="2100">Recevoir mon kit !</Link>
                         <p className="recap-sub-title" data-aos="fade-right" data-aos-duration="2200">Envie de nous soutenir ?</p>
                         <p className="recap-sub-title" data-aos="fade-right" data-aos-duration="2300">Tu es étudiant avec un moyen de locomotion ?</p>
-                        <Link to="/deliveryman" className="btn-primary-red" data-aos="fade-right" data-aos-duration="2400">Devenir Livreur</Link>
+                        <a href="https://forms.gle/86NQSw7ePixvuQv77" target="_blank" rel="noreferrer" className="btn-primary-red" data-aos="fade-right" data-aos-duration="2400">Devenir Livreur</a>
                         <p className="recap-sub-title" data-aos="fade-right" data-aos-duration="2500">Tu tiens un commerce et tu vends des denrées alimentaire <br /> ou des produits de prémière nécessité ?</p>
-                        <Link to="/donator" className="btn-primary-blue" data-aos="fade-right" data-aos-duration="2600">Devenir Donateur</Link>
+                        <a href="https://forms.gle/gU2J78wrS1QDENgS8" target="_blank" rel="noreferrer" className="btn-primary-blue" data-aos="fade-right" data-aos-duration="2600">Devenir Donateur</a>
                     </section>
                     <footer>
                         <div className="footer-column-wrapper">

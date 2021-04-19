@@ -13,9 +13,9 @@ function Contact() {
         <>
             <ScrollToTopOnMount />
             <div className="contact-bg">
-                <div className="contact-navbar">
+                <div className="sub-section-navbar">
                     <a href="/">
-                        <img src={logo} alt="delivr'aide logo" className="contact-hero-logo" />
+                        <img src={logo} alt="delivr'aide logo" className="sub-section-hero-logo" />
                     </a>
                 </div>
                 <section className="contact-page-contact instagram">Notre insta:</section>

@@ -1,4 +1,4 @@
-.contact-navbar {
+.sub-section-navbar {
     top: 0;
     width: 100%;
     display: flex;
@@ -10,10 +10,10 @@
 }
 
 .contact-bg {
+    background: $mainBlue;
     position: absolute;
     width: 100%;
     height: 100%;
-    background: $mainBlue;
 }
 
 .contact-page-contact {

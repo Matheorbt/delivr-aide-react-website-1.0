@@ -6,9 +6,9 @@ function PageNotFound() {
     return (
         <>
             <div className="not-found-bg">
-                <div className="not-found-navbar">
+                <div className="sub-section-navbar">
                     <a href="/">
-                        <img src={logo} alt="delivr'aide logo" className="not-found-hero-logo" />
+                        <img src={logo} alt="delivr'aide logo" className="sub-section-hero-logo" />
                     </a>
                 </div>
                 <div className="not-found-text-wrapper">
