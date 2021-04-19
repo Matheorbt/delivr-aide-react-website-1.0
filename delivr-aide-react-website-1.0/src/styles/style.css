@@ -332,6 +332,74 @@ body {
   cursor: pointer;
 }
 
+.media-section {
+  margin-top: 45px;
+}
+
+.media-section .media-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.media-section .media-wrapper .media-caption {
+  font-family: "Fredoka One", cursive;
+  color: #4295D3;
+  font-size: 3.75vw;
+  margin-bottom: 45px;
+}
+
+.media-section .media-wrapper .media-line {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 2px;
+  width: 90vw;
+}
+
+.media-section .media-wrapper .media-logo-container {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  margin-top: 45px;
+  margin-bottom: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.media-section .media-wrapper .media-logo-container .france-inter {
+  height: 250px;
+  width: 250px;
+}
+
+.media-section .media-wrapper .media-logo-container .figaro {
+  height: 100px;
+  width: 420px;
+}
+
+.media-section .media-wrapper .media-logo-container .brut {
+  height: 100px;
+  width: 420px;
+}
+
 .info-banner-column-wrapper .checklist-illustration {
   width: 32vw;
   height: 40vw;
@@ -650,6 +718,59 @@ body {
     font-size: 4vw;
     margin-bottom: 40px;
   }
+  .media-section {
+    margin-top: 45px;
+  }
+  .media-section .media-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .media-section .media-wrapper .media-caption {
+    font-family: "Fredoka One", cursive;
+    color: #4295D3;
+    font-size: 6vw;
+    margin-bottom: 45px;
+  }
+  .media-section .media-wrapper .media-line {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 90vw;
+  }
+  .media-section .media-wrapper .media-logo-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 45px;
+  }
+  .media-section .media-wrapper .media-logo-container .france-inter {
+    height: 125px;
+    width: 125px;
+  }
+  .media-section .media-wrapper .media-logo-container .figaro {
+    height: 50px;
+    width: 210px;
+  }
+  .media-section .media-wrapper .media-logo-container .brut {
+    height: 50px;
+    width: 210px;
+  }
 }
 
 @media only screen and (max-device-width: 600px) {
@@ -774,6 +895,9 @@ body {
   .caroussel-container {
     width: 90vw;
     margin-left: 5%;
+  }
+  .media-section .media-wrapper .media-caption {
+    font-size: 8vw;
   }
   .info-banner {
     border-radius: 0 0 150px 150px;

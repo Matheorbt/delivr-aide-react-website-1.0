@@ -12,8 +12,15 @@ import franceMap from '../props/img/map-france-pin.png'
 import conditionIllustration from '../props/svg/condition-svg.svg'
 import heart from '../props/svg/heart.svg'
 import instagramLogo from '../props/svg/instagram_logo.svg'
-import mailLetter from '../props/svg/mail-letter.svg'
+import linkedinLogo from '../props/svg/linkedin-logo.svg'
 import logoFooter from '../props/img/logo-footer.png'
+
+//Logo media
+
+import brutLogo from '../props/svg/Brut_logo.svg'
+import figaroLogo from '../props/svg/Le_Figaro_logo.svg'
+import interLogo from '../props/svg/France_Inter_logo.svg'
+
 
 //Caroussel picture
 import carousselOne from '../props/img/carousel/carousel-image_kit.JPG'
@@ -100,6 +107,17 @@ function App() {
                     </Slider>
                 </div>
             </div>
+            <section className="media-section">
+                <div className="media-wrapper">
+                    <p className="media-caption">Ils parlent de nous</p>
+                    <hr className="media-line"></hr>
+                    <div className="media-logo-container">
+                        <a href="." target="_blank" rel="noreferr"><img className="france-inter" src={interLogo} alt="inter france" /></a>
+                        <a href="https://youtu.be/wTIirhT3Pqc" target="_blank" rel="noreferrer"><img className="brut" src={brutLogo} alt="brut" /></a>
+                        <a href="." target="_blank" rel="noreferr"><img className="figaro" src={figaroLogo} alt="le figaro" /></a>
+                    </div>
+                </div>
+            </section>
             <div className="info-banner banner-conditions">
                 <div className="info-banner-column-wrapper">
                     <img className="checklist-illustration" alt="checklist" src={conditionIllustration} data-aos="fade-right"></img>
@@ -142,9 +160,10 @@ function App() {
                                     <p className="footer-contact-title">Contact</p>
                                     <p className="footer-contact-description">Des questions ? <br /> nous avons les réponses</p>
                                     <div className="contact-logo">
-                                        <img className="instagram-logo" src={instagramLogo} alt="instagram"></img>
-                                        <img className="mail-logo" src={mailLetter} alt="mail letter"></img>
+                                        <a href="https://www.instagram.com/equipagesolidaire/" target="_blank" rel="noreferrer"><img className="instagram-logo" src={instagramLogo} alt="instagram"></img></a>
+                                        <a href="https://www.linkedin.com/company/equipagesolidaire" target="_blank" rel="noreferrer"><img className="instagram-logo" src={linkedinLogo} alt="linkedin"></img></a>
                                     </div>
+                                    <Link to="/contact" className="btn-primary-blue">Plus d'info</Link>
                                 </div>
                             </div>
                             <div className="footer-right-column">

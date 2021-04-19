@@ -215,6 +215,51 @@
     }
 }
 
+.media-section {
+    margin-top: 45px;
+    .media-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .media-caption {
+            font-family: $mainFont;
+            color: $mainBlue;
+            font-size: 3.75vw;
+            margin-bottom: 45px;
+        }
+        .media-line {
+            display: block;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: inset;
+            border-width: 2px;
+            width: 90vw;
+        }
+        .media-logo-container {
+             filter: grayscale(100%);
+            margin-top: 45px;
+            margin-bottom: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .france-inter {
+                height: 250px;
+                width: 250px;
+            }
+            .figaro {
+                height: 100px;
+                width: 420px;
+            }
+            .brut {
+                height: 100px;
+                width: 420px;
+            }
+        }
+    }
+}
 
 .info-banner-column-wrapper {
     .checklist-illustration {
@@ -428,6 +473,47 @@
         font-size: 4vw;
         margin-bottom: 40px;
     }
+    .media-section {
+    margin-top: 45px;
+    .media-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .media-caption {
+            font-family: $mainFont;
+            color: $mainBlue;
+            font-size: 6vw;
+            margin-bottom: 45px;
+        }
+        .media-line {
+            display: block;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: inset;
+            border-width: 1px;
+            width: 90vw;
+        }
+        .media-logo-container {
+            flex-direction: column;
+            gap: 45px;
+            .france-inter {
+                height: 125px;
+                width: 125px;
+            }
+            .figaro {
+                height: 50px;
+                width: 210px;
+            }
+            .brut {
+                height: 50px;
+                width: 210px;
+            }
+        }
+    }
+}
 }
 
 @media only screen and (max-device-width: 600px)  {
@@ -539,6 +625,9 @@
     .caroussel-container {
         width: 90vw;
         margin-left: 5%;
+    }
+    .media-section .media-wrapper .media-caption {
+        font-size: 8vw;
     }
     .info-banner {
         border-radius: 0 0 150px 150px;
