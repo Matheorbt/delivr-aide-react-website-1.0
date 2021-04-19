@@ -526,11 +526,13 @@ body {
 .conclusion footer .footer-column-wrapper .footer-left-column .footer-contact-section .mail-logo {
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
+  width: 75px;
 }
 
 .conclusion footer .footer-column-wrapper .footer-left-column .footer-contact-section .instagram-logo {
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
+  width: 75px;
 }
 
 .conclusion footer .footer-column-wrapper .footer-left-column .footer-contact-section .mail-logo:hover {
@@ -556,6 +558,7 @@ body {
   font-family: "Fredoka One", cursive;
   color: white;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .conclusion hr {

@@ -16,13 +16,12 @@ import mailLetter from '../props/svg/mail-letter.svg'
 import logoFooter from '../props/img/logo-footer.png'
 
 //Caroussel picture
-import carousselOne from '../props/img/caroussel-1.png'
-import carousselTwo from '../props/img/caroussel-2.png'
-import carousselThree from '../props/img/caroussel-3.png'
-import carousselFour from '../props/img/caroussel-4.png'
-import carousselFive from '../props/img/caroussel-5.png'
-import carousselSix from '../props/img/caroussel-6.png'
-import carousselSeven from '../props/img/caroussel-7.png'
+import carousselOne from '../props/img/carousel/carousel-image_kit.JPG'
+import carousselTwo from '../props/img/carousel/carousel-image_thanks.png'
+import carousselFour from '../props/img/carousel/carousel-image_car.png'
+import carousselFive from '../props/img/carousel/carousel-image_member_1.png'
+import carousselSix from '../props/img/carousel/carousel-image_kit.JPG'
+import carousselSeven from '../props/img/carousel/carousel-image_kit_example.png'
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -95,7 +94,6 @@ function App() {
                         <img className="slide-img four" src={carousselFour} alt="grouptest" />
                         <img className="slide-img two" src={carousselTwo} alt="grouptest" />
                         <img className="slide-img six" src={carousselSix} alt="grouptest" />
-                        <img className="slide-img three" src={carousselThree} alt="grouptest" />
                         <img className="slide-img five" src={carousselFive} alt="grouptest" />
                         <img className="slide-img seven" src={carousselSeven} alt="grouptest" />
                         <img className="slide-img one" src={carousselOne} alt="grouptest" />
@@ -107,9 +105,9 @@ function App() {
                     <img className="checklist-illustration" alt="checklist" src={conditionIllustration} data-aos="fade-right"></img>
                     <div className="info-banner-avantage">
                         <p className="banner-text-avantage-hero" data-aos="fade-left">Les avantages</p>
-                        <p className="banner-text-avantage" data-aos="fade-left">Pas besoin de se déplacer 😏</p>
-                        <p className="banner-text-avantage" data-aos="fade-left">Pas de frais 😇</p>
-                        <p className="banner-text-avantage" data-aos="fade-left">Nous demandons juste une carte étudiante 😉</p>
+                        <p className="banner-text-avantage" data-aos="fade-left">Des kits long terme ou court terme🍎</p>
+                        <p className="banner-text-avantage" data-aos="fade-left">Livraison directement à domicile 🏠</p>
+                        <p className="banner-text-avantage" data-aos="fade-left">Sans frais ✔️</p>
                     </div>
                 </div>
             </div>
@@ -118,21 +116,24 @@ function App() {
                     <div className="donation-column-wrapper">
                         <div className="donation-parapgraph">
                             <p className="donation-title" data-aos="fade-right">Envie de faire un don ?</p>
-                            <p className="donation-description" data-aos="fade-right">Vos dons nous permettent de louer des locaux dans les différentes villes <br /> où nous sommes implantés afin de vous proposez de plus en plus d’aide.</p>
+                            <p className="donation-description" data-aos="fade-right">Vos dons permettent l'achat de sacs, denrées alimentaires et produits hygiéniques par nos bénévoles pour compléter les kits distribués chaque semaine, mais aussi pour louer nos locaux, et payer l'hébergement ! Chaque geste compte !</p>
                         </div>
                         <img src={heart} alt="heart" className="donation-heart-illustration" data-aos="fade-left"></img>
                     </div>
-                    <a className="btn-primary-red" href="https://www.helloasso.com/associations/l-equipage-solidaire/formulaires/2" target="_blank" rel="noreferrer" data-aos="fade-left">Faire un don</a>
+                    <a className="btn-primary-red" href="https://www.helloasso.com/associations/l-equipage-solidaire/formulaires/2/widget" target="_blank" rel="noreferrer" data-aos="fade-left">Faire un don</a>
                 </div>
                 <section className="conclusion">
                     <section className="recap">
-                        <p className="recap-hero-title" data-aos="fade-right">Convaincu ?</p>
+                        <p className="recap-hero-title" data-aos="fade-right">Vous souhaitez participer au projet ? Vous êtes les bienvenus ! Comment souhaitez vous nous aider ?</p>
                         <Link to="/addkit" className="btn-primary-blue" data-aos="fade-right" data-aos-duration="2100">Recevoir mon kit !</Link>
                         <p className="recap-sub-title" data-aos="fade-right" data-aos-duration="2200">Envie de nous soutenir ?</p>
-                        <p className="recap-sub-title" data-aos="fade-right" data-aos-duration="2300">Tu es étudiant avec un moyen de locomotion ?</p>
+                        <p className="recap-sub-title" data-aos="fade-right" data-aos-duration="2300">1) Je souhaite rejoindre l'équipe de livreurs-bénévoles !</p>
                         <a href="https://forms.gle/86NQSw7ePixvuQv77" target="_blank" rel="noreferrer" className="btn-primary-red" data-aos="fade-right" data-aos-duration="2400">Devenir Livreur</a>
-                        <p className="recap-sub-title" data-aos="fade-right" data-aos-duration="2500">Tu tiens un commerce et tu vends des denrées alimentaire <br /> ou des produits de prémière nécessité ?</p>
-                        <a href="https://forms.gle/gU2J78wrS1QDENgS8" target="_blank" rel="noreferrer" className="btn-primary-blue" data-aos="fade-right" data-aos-duration="2600">Devenir Donateur</a>
+                        <p className="recap-sub-title" data-aos="fade-right" data-aos-duration="2500">2) Je souhaite faire un don pour permettre de constituer plus de kits !</p>
+                        <a href="https://forms.gle/gU2J78wrS1QDENgS8" target="_blank" rel="noreferrer" className="btn-primary-blue" data-aos="fade-right" data-aos-duration="2600">Faire un don alimentaire</a>
+                        <a href="https://www.helloasso.com/associations/l-equipage-solidaire/formulaires/2/widget" target="_blank" rel="noreferrer" className="btn-primary-blue" data-aos="fade-right" data-aos-duration="2600">Faire un don en argent</a>
+                        <p className="recap-sub-title" data-aos="fade-right" data-aos-duration="2500">3) Je souhaite devenir membre de l'association et vous aider à transporter et préparer les kits !</p>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSehmlfM7T-9C67h0FLzua6VnDbiFCQAzQfRRnHobDQQAKSpIA/viewform" target="_blank" rel="noreferrer" className="btn-primary-red" data-aos="fade-right" data-aos-duration="2600">Nous rejoindre</a>
                     </section>
                     <footer>
                         <div className="footer-column-wrapper">

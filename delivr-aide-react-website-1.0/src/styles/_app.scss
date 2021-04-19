@@ -320,9 +320,11 @@
                     }
                     .mail-logo {
                         transition: $shortTransition;
+                        width: 75px;
                     }
                     .instagram-logo {
                         transition: $shortTransition;
+                        width: 75px;
                     }
                     .mail-logo:hover {
                         opacity: 0.8;
@@ -346,6 +348,7 @@
             font-family: $mainFont;
             color: white;
             text-align: center;
+            margin-bottom: 20px;
         }
     }
     hr {
