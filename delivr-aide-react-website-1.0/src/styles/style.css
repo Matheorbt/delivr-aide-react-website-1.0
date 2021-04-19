@@ -371,8 +371,6 @@ body {
 }
 
 .media-section .media-wrapper .media-logo-container {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
   margin-top: 45px;
   margin-bottom: 45px;
   display: -webkit-box;
