@@ -1720,9 +1720,55 @@ body {
 
 .contact-page-contact {
   font-family: "Fredoka One", cursive;
-  font-size: 2em;
+  font-size: 2.5em;
   color: white;
   text-align: center;
+}
+
+.contact-page-contact span {
+  font-size: 1em;
+}
+
+.contact-logo {
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  width: 75px;
+}
+
+.insta:hover {
+  opacity: 0.8;
+}
+
+.linkedin:hover {
+  opacity: 0.8;
+}
+
+.contact-link-wrapper {
+  margin-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 45px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-page-title {
+  font-family: "Fredoka One", cursive;
+  font-size: 4em;
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (max-device-width: 700px) {
+  .contact-page-contact span {
+    font-size: 0.55em;
+  }
 }
 
 .btn-primary-red {

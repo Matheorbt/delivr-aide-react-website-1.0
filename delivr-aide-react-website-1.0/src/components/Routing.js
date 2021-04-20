@@ -13,8 +13,6 @@ import Politique from './Politique'
 import PageNotFound from './PageNotFound'
 import Contact from './Contact'
 import App from './App'
-import AddDeliveryMan from './AddDeliveryMan'
-import AddDonator from './AddDonator'
 import HiddenSection from './HiddenSection'
 
 function Routing() {
@@ -30,12 +28,6 @@ function Routing() {
                     </Route>
                     <Route path="/politique">
                         <Politique />
-                    </Route>
-                    <Route path="/donator">
-                        <AddDonator />
-                    </Route>
-                    <Route path="/deliveryman">
-                        <AddDeliveryMan />
                     </Route>
                     <Route path="/charte">
                         <Charte />
