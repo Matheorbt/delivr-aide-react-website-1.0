@@ -48,35 +48,35 @@ function AddKit() {
                             <div className="form-firstname-lastname">
                                 <div className="form-last-name">
                                     <label>Nom :</label>
-                                    <input type="name" name="nom" id="firstName" required></input>
+                                    <input type="name" name="nom" id="firstName" className="addKitInputForm" required></input>
                                 </div>
                                 <div className="form-first-name">
                                     <label>Prénom :</label>
-                                    <input type="name" name="prenom" id="lastName" required></input>
+                                    <input type="name" name="prenom" id="lastName" className="addKitInputForm" required></input>
                                 </div>
                             </div>
                             <div className="form-city-info">
                                 <div className="form-city-name">
                                     <label>Ville :</label>
-                                    <input type="text" name="ville" id="city" required></input>
+                                    <input type="text" name="ville" id="city" className="addKitInputForm" required></input>
                                 </div>
                                 <div className="form-zip-code">
                                     <label>Code postal :</label>
-                                    <input type="number" name="code_postal" id="zipCode" required></input>
+                                    <input type="number" name="code_postal" id="zipCode" className="addKitInputForm" required></input>
                                 </div>
                             </div>
                             <div className="form-city-name">
                                 <label>Adresse :</label>
-                                <input type="text" name="adresse" id="adress" required></input>
+                                <input type="text" name="adresse" id="adress" className="addKitInputForm" required></input>
                             </div>
                             <div className="form-account-connexion">
                                 <div className="form-number">
                                     <label>Tél. :</label>
-                                    <input type="tel" name="tel" id="phoneNumber" required></input>
+                                    <input type="tel" name="tel" id="phoneNumber" className="addKitInputForm" required></input>
                                 </div>
                                 <div className="form-email">
                                     <label>E-mail :</label>
-                                    <input type="email" name="email" id="mail" required></input>
+                                    <input type="email" name="email" id="mail" className="addKitInputForm" required></input>
                                 </div>
                             </div>
                             <div className="politique-div"><input type="checkbox" id="confidentialité" name="confidentialité" required /><label htmlFor="confidentialité">J'accepte que ces informations soient <a href="/charte">enregistrées et traitées</a> par l'asssociation l'Equipage Solidaire conformément à sa <a href="/politique">politique de confidentialité</a>.</label></div>
