@@ -11,6 +11,21 @@ body {
   overflow-x: hidden;
 }
 
+.addKitInputForm {
+  all: unset;
+  border: 4px solid var(--main-font-color);
+  border-radius: 25px;
+  font-family: var(--main-font);
+  color: var(--main-font-color);
+  font-size: 2vw;
+  padding: 15px;
+  background: var(--main-font-color);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-box-shadow: 4px 7px 18px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 7px 18px 6px rgba(0, 0, 0, 0.25);
+}
+
 .navbar-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -583,9 +598,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   gap: 50px;
 }
 
@@ -636,6 +651,27 @@ body {
   border-style: inset;
   border-width: 1px;
   width: 90vw;
+}
+
+.heartContainerTextCopyright {
+  font-family: "Fredoka One", cursive;
+  font-size: 12px;
+}
+
+.heartSvgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .yovann {
@@ -1617,15 +1653,20 @@ body {
   all: unset;
   border: 4px solid var(--main-font-color);
   border-radius: 25px;
-  font-family: var(--main-font);
   color: var(--main-font-color);
-  font-size: 2vw;
   padding: 15px;
   background: var(--main-font-color);
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   -webkit-box-shadow: 4px 7px 18px 6px rgba(0, 0, 0, 0.25);
           box-shadow: 4px 7px 18px 6px rgba(0, 0, 0, 0.25);
+  font-family: var(--main-font);
+  font-size: 2vw;
+}
+
+#phoneNumber, #firstName, #lastName, #city, #zipCode, #adress, #phoneNumber, #mail, #confidentialité {
+  font-family: var(--main-font);
+  font-size: 2vw;
 }
 
 .form-wrapper input:focus {
@@ -1660,9 +1701,8 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .addKitInputForm {
+  #phoneNumber, #firstName, #lastName, #city, #zipCode, #adress, #phoneNumber, #mail, #confidentialité {
     font-size: 6vw;
-    font-family: var(--main-font);
   }
   .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-submit {
     font-size: 8vw;

@@ -359,7 +359,7 @@
                     .contact-logo {
                         display: flex;
                         align-items: center;
-                        justify-content: center;
+                        justify-content: flex-start;
                         gap:50px;
                     }
                     .mail-logo {
@@ -405,6 +405,18 @@
         border-width: 1px;
         width: 90vw;
     }
+}
+
+.heartContainerTextCopyright {
+    font-family: $mainFont;
+    font-size: 12px;
+}
+
+.heartSvgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .yovann {

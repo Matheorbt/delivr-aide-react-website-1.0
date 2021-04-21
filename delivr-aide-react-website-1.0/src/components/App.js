@@ -136,7 +136,10 @@ function App() {
                             <p className="donation-title" data-aos="fade-right">Envie de faire un don ?</p>
                             <p className="donation-description" data-aos="fade-right">Vos dons permettent l'achat de sacs, denrées alimentaires et produits hygiéniques par nos bénévoles pour compléter les kits distribués chaque semaine, mais aussi pour louer nos locaux, et payer l'hébergement ! Chaque geste compte !</p>
                         </div>
-                        <img src={heart} alt="heart" className="donation-heart-illustration" data-aos="fade-left"></img>
+                        <div className="heartSvgContainer">
+                            <img src={heart} alt="heart" className="donation-heart-illustration" data-aos="fade-left"></img>
+                            <div className="heartContainerTextCopyright">Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                        </div>
                     </div>
                     <a className="btn-primary-red" href="https://www.helloasso.com/associations/l-equipage-solidaire/formulaires/2/widget" target="_blank" rel="noreferrer" data-aos="fade-left">Faire un don</a>
                 </div>
@@ -159,9 +162,11 @@ function App() {
                                 <div className="footer-contact-section">
                                     <p className="footer-contact-title">Contact</p>
                                     <p className="footer-contact-description">Des questions ? <br /> nous avons les réponses</p>
-                                    <div className="contact-logo">
-                                        <a href="https://www.instagram.com/equipagesolidaire/" target="_blank" rel="noreferrer"><img className="instagram-logo" src={instagramLogo} alt="instagram"></img></a>
-                                        <a href="https://www.linkedin.com/company/equipagesolidaire" target="_blank" rel="noreferrer"><img className="instagram-logo" src={linkedinLogo} alt="linkedin"></img></a>
+                                    <div classNam="contact-logo-container">
+                                        <div className="contact-logo">
+                                            <a href="https://www.instagram.com/equipagesolidaire/" target="_blank" rel="noreferrer"><img className="instagram-logo" src={instagramLogo} alt="instagram"></img></a>
+                                            <a href="https://www.linkedin.com/company/equipagesolidaire" target="_blank" rel="noreferrer"><img className="instagram-logo" src={linkedinLogo} alt="linkedin"></img></a>
+                                        </div>
                                     </div>
                                     <Link to="/contact" className="btn-primary-blue">Plus d'info</Link>
                                 </div>
