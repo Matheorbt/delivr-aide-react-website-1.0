@@ -11,31 +11,18 @@ function AddKit() {
         }, []);
         return null;
     }
-    var today = new Date();
-    var dd = String(today.getDate()).padStart(2, '0');
-    var mm = String(today.getMonth() + 1).padStart(2, '0');
-    var yyyy = today.getFullYear();
-    const submitForm = () => {
+
+    function sendEmail(e) {
+        e.preventDefault();
         init("user_Nh0h5ghTV3VVccDb4TSqH");
-        var templateParams = {
-            day: dd,
-            month: mm,
-            year: yyyy,
-            city: document.getElementById("city").value,
-            firstName: document.getElementById("firstName").value,
-            lastName: document.getElementById("lastName").value,
-            zipCode: document.getElementById("zipCode").value,
-            phoneNumber: document.getElementById("phoneNumber").value,
-            mail: document.getElementById("mail").value,
-            adress: document.getElementById("adress").value,
-        };
-        emailjs.send("service_xrwqzwt", "template_51nprxi", templateParams, "user_Nh0h5ghTV3VVccDb4TSqH")
+
+        emailjs.sendForm('service_xrwqzwt', 'template_51nprxi', '#formKit')
             .then(function (response) {
-                console.log('Contact form send.', response.status, response.text);
+                console.log('SUCCESS!', response.status, response.text);
             }, function (error) {
-                window.alert("Erreur lors de l'envoi du formulaire veuillez reéssayer plus tard")
-                console.log('Contact form sending encouter issue.', error);
+                console.log('FAILED...', error);
             });
+        e.target.reset()
     }
     return (
         <>
@@ -44,43 +31,43 @@ function AddKit() {
                 <div className="main-wrapper-add-kit">
                     <div className="form-main-wrapper">
                         <p className="add-kit-hero-title">Recevoir mon kit</p>
-                        <form className="form-wrapper">
+                        <form id="formKit" className="form-wrapper" onSubmit={sendEmail}>
                             <div className="form-firstname-lastname">
                                 <div className="form-last-name">
                                     <label>Nom :</label>
-                                    <input type="name" name="nom" id="firstName" className="addKitInputForm" required></input>
+                                    <input type="name" name="lastName" id="firstName" className="addKitInputForm" required></input>
                                 </div>
                                 <div className="form-first-name">
                                     <label>Prénom :</label>
-                                    <input type="name" name="prenom" id="lastName" className="addKitInputForm" required></input>
+                                    <input type="name" name="firstName" id="lastName" className="addKitInputForm" required></input>
                                 </div>
                             </div>
                             <div className="form-city-info">
                                 <div className="form-city-name">
                                     <label>Ville :</label>
-                                    <input type="text" name="ville" id="city" className="addKitInputForm" required></input>
+                                    <input type="text" name="city" id="city" className="addKitInputForm" required></input>
                                 </div>
                                 <div className="form-zip-code">
                                     <label>Code postal :</label>
-                                    <input type="number" name="code_postal" id="zipCode" className="addKitInputForm" required></input>
+                                    <input type="number" name="zipCode" id="zipCode" className="addKitInputForm" required></input>
                                 </div>
                             </div>
                             <div className="form-city-name">
                                 <label>Adresse :</label>
-                                <input type="text" name="adresse" id="adress" className="addKitInputForm" required></input>
+                                <input type="text" name="adress" id="adress" className="addKitInputForm" required></input>
                             </div>
                             <div className="form-account-connexion">
                                 <div className="form-number">
                                     <label>Tél. :</label>
-                                    <input type="tel" name="tel" id="phoneNumber" className="addKitInputForm" required></input>
+                                    <input type="tel" name="phoneNumber" id="phoneNumber" className="addKitInputForm" required></input>
                                 </div>
                                 <div className="form-email">
                                     <label>E-mail :</label>
-                                    <input type="email" name="email" id="mail" className="addKitInputForm" required></input>
+                                    <input type="email" name="mail" id="mail" className="addKitInputForm" required></input>
                                 </div>
                             </div>
                             <div className="politique-div"><input type="checkbox" id="confidentialité" name="confidentialité" required /><label htmlFor="confidentialité">J'accepte que ces informations soient <a href="/charte">enregistrées et traitées</a> par l'asssociation l'Equipage Solidaire conformément à sa <a href="/politique">politique de confidentialité</a>.</label></div>
-                            <button type="submit" className="form-submit" onClick={() => submitForm()}>Valider</button>
+                            <button type="submit" className="form-submit">Valider</button>
                         </form>
                     </div>
                 </div>

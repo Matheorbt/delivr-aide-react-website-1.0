@@ -162,7 +162,7 @@ function App() {
                                 <div className="footer-contact-section">
                                     <p className="footer-contact-title">Contact</p>
                                     <p className="footer-contact-description">Des questions ? <br /> nous avons les réponses</p>
-                                    <div classNam="contact-logo-container">
+                                    <div className="contact-logo-container">
                                         <div className="contact-logo">
                                             <a href="https://www.instagram.com/equipagesolidaire/" target="_blank" rel="noreferrer"><img className="instagram-logo" src={instagramLogo} alt="instagram"></img></a>
                                             <a href="https://www.linkedin.com/company/equipagesolidaire" target="_blank" rel="noreferrer"><img className="instagram-logo" src={linkedinLogo} alt="linkedin"></img></a>
