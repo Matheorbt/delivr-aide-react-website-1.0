@@ -7,7 +7,7 @@
     margin-bottom: 40px;
     margin-top: 20px;
     .navbar-brand {
-        height: 8vw;
+        height: 7.5vw;
         width: 30vw;
         align-content: flex-end;
         margin-left: auto;
@@ -74,6 +74,7 @@
     border-radius: 169.5px 0px;
     width: 100%;
     margin-bottom: 40px;
+    overflow-x: hidden;
     .info-banner-column-wrapper {
         display: flex;
         align-items: center;
@@ -139,6 +140,7 @@
     justify-content: center;
     flex-direction: column;
     margin-bottom: 40px;
+    overflow: hidden;
     gap: 10px;
     @supports (-webkit-text-stroke: 3px $mainBlue) {
         .delivraide-info-title-stroke {
@@ -202,6 +204,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 .caroussel-container {
     width: 480px;
@@ -209,6 +212,7 @@
     .slide-img {
         height: 80vh;
         border-radius: 25px;
+        object-fit: cover;
     }
     .slide-img:hover {
         cursor: pointer;
@@ -285,6 +289,7 @@
     justify-content: center;
     flex-direction: column;
     margin-bottom: 40px;
+    overflow:hidden;
     .donation-column-wrapper {
         width: 90vw;
         display: flex;
