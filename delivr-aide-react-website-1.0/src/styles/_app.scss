@@ -289,7 +289,7 @@
     justify-content: center;
     flex-direction: column;
     margin-bottom: 40px;
-    overflow:hidden;
+    padding-bottom: 20px;
     .donation-column-wrapper {
         width: 90vw;
         display: flex;
@@ -659,6 +659,9 @@
     .info-banner-avantage p {
         font-size: 5vw;
         margin-bottom: 40px;
+    }
+    .donation-wrapper {
+        overflow:hidden;
     }
     .donation-wrapper .donation-title {
         font-size: 7vw;
