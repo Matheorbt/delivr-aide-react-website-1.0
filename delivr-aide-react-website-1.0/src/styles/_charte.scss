@@ -2,7 +2,6 @@
     width: 85%;
     color: white;
     font-size: 1.25em;
-    font-family: $mainFont;
 }
 
 .sub-section-bg {
@@ -11,10 +10,6 @@
     background: $mainBlue;
 }
 
-.div-li-politique {
-    width: 85%;
-    font-size: 15px;
-}
 
 .about-section-validation {
     margin-left: 25px;
@@ -23,13 +18,11 @@
     margin-top: 5%;
     gap: 40px;
     h3 {
-        font-family: $mainFont;
         text-align: center;
         color: white;
         font-size: 1.25em;
     }
     .div-li {
-        font-family: $mainFont;
         color: white;
         font-size: 1em;
     }

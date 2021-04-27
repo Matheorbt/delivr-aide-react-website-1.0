@@ -1404,27 +1404,20 @@ body {
 }
 
 .div-li-politique {
-  font-family: "Fredoka One", cursive;
   color: white;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .p-confidentialité {
   width: 85%;
   color: white;
   font-size: 1.25em;
-  font-family: "Fredoka One", cursive;
 }
 
 .sub-section-bg {
   width: 100%;
   height: 100%;
   background: #4295D3;
-}
-
-.div-li-politique {
-  width: 85%;
-  font-size: 15px;
 }
 
 .about-section-validation {
@@ -1440,14 +1433,12 @@ body {
 }
 
 .about-section-validation h3 {
-  font-family: "Fredoka One", cursive;
   text-align: center;
   color: white;
   font-size: 1.25em;
 }
 
 .about-section-validation .div-li {
-  font-family: "Fredoka One", cursive;
   color: white;
   font-size: 1em;
 }
