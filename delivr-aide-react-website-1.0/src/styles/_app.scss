@@ -120,7 +120,6 @@
             margin-left: 7%;
         }
         .banner-img {
-            border-radius: 50%;
             width: 444px;
             height: 444px;
             transform: translateY(-15%);
@@ -134,17 +133,12 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-    gap: 20%;
-    @supports not (-webkit-gap: 20%) {
-        .france-map-text {
-            padding-left: 20%;
-        }
-    }
     margin-bottom: 40px;
     .france-map-text {
         font-family: $mainFont;
         font-size: 3.75vw;
         color: $mainBlue;
+        padding-left: 20%;
     }
 }
 
@@ -517,6 +511,9 @@
             }
         }
         text-align: center;
+    }
+    .available-city .france-map-text {
+        padding-left: 0;
     }
     .info-banner .info-banner-column-wrapper .banner-img {
         margin-right: 0;

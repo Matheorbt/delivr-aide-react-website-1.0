@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 //Image
 import logo from '../props/logo/logo.png';
 import heroCover from '../props/img/delivery-bag.jpeg'
-import freshProduct from '../props/img/fresh-product.png'
-import hygieneProduct from '../props/img/produit_hygiene.jpg'
+import hygieneProduct from '../props/svg/hygiene_products.svg'
 import franceMap from '../props/img/map-france-pin.png'
+import vegetables from '../props/svg/vegetables.svg'
 import conditionIllustration from '../props/svg/condition-svg.svg'
 import heart from '../props/svg/heart.svg'
 import instagramLogo from '../props/svg/instagram_logo.svg'
@@ -74,7 +74,7 @@ function App() {
             <div className="info-banner banner-fresh-product">
                 <div className="info-banner-column-wrapper">
                     <p className="banner-text" data-aos="fade-right">Nous vous proposons des produits frais.</p>
-                    <img className="banner-img" alt="fresh product" src={freshProduct} data-aos="fade-left"></img>
+                    <img className="banner-img" alt="fresh product" src={vegetables} data-aos="fade-left"></img>
                 </div>
             </div>
             <div className="available-city">

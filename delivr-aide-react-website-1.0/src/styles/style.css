@@ -217,7 +217,6 @@ body {
 }
 
 .info-banner-reverse .info-banner-column-wrapper .banner-img {
-  border-radius: 50%;
   width: 444px;
   height: 444px;
   -webkit-transform: translateY(-15%);
@@ -238,20 +237,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 20%;
   margin-bottom: 40px;
-}
-
-@supports not (-webkit-gap: 20%) {
-  .available-city .france-map-text {
-    padding-left: 20%;
-  }
 }
 
 .available-city .france-map-text {
   font-family: "Fredoka One", cursive;
   font-size: 3.75vw;
   color: #4295D3;
+  padding-left: 20%;
 }
 
 .delivraide-info {
@@ -790,6 +783,9 @@ body {
     .info-banner-column-wrapper .info-banner-column-wrapper > * {
       margin: 50px;
     }
+  }
+  .available-city .france-map-text {
+    padding-left: 0;
   }
   .info-banner .info-banner-column-wrapper .banner-img {
     margin-right: 0;
