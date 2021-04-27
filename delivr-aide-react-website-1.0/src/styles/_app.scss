@@ -56,7 +56,7 @@
             }
             width: 50vw;
             .hero-title {
-                font-size: 3.75vw;
+                font-size: 3.65vw;
                 color: $mainRed;
             }
             .hero-description {
@@ -483,6 +483,12 @@
 .yovann {
     width: 100%;
     height: 100%;
+}
+
+@media only screen and (max-device-width: 1830px)  {
+    .introduction-wrapper .introduction-column-wrapper .left-column .hero-title {
+        font-size: 3.5vw;
+    }
 }
 
 @media only screen and (max-device-width: 1400px)  {

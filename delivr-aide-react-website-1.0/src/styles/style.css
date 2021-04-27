@@ -124,7 +124,7 @@ body {
 }
 
 .introduction-wrapper .introduction-column-wrapper .left-column .hero-title {
-  font-size: 3.75vw;
+  font-size: 3.65vw;
   color: #E84C3C;
 }
 
@@ -748,6 +748,12 @@ body {
 .yovann {
   width: 100%;
   height: 100%;
+}
+
+@media only screen and (max-device-width: 1830px) {
+  .introduction-wrapper .introduction-column-wrapper .left-column .hero-title {
+    font-size: 3.5vw;
+  }
 }
 
 @media only screen and (max-device-width: 1400px) {
