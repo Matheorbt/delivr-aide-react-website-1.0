@@ -93,12 +93,9 @@ body {
   margin-bottom: 50px;
 }
 
-@supports not (gap: 40px) {
-  .introduction-wrapper .introduction-column-wrapper .introduction-column-wrapper {
-    margin: -0.5em;
-  }
-  .introduction-wrapper .introduction-column-wrapper .introduction-column-wrapper > * {
-    margin: 0.5em;
+@supports not (-webkit-gap: 40px) {
+  .introduction-wrapper .introduction-column-wrapper .left-column {
+    padding-right: 40px;
   }
 }
 
@@ -120,12 +117,9 @@ body {
   width: 50vw;
 }
 
-@supports not (gap: 50px) {
-  .introduction-wrapper .introduction-column-wrapper .left-column .left-column {
-    margin: 50px;
-  }
-  .introduction-wrapper .introduction-column-wrapper .left-column .left-column > * {
-    margin: 50px;
+@supports not (-webkit-gap: 50px) {
+  .introduction-wrapper .introduction-column-wrapper .left-column .hero-title {
+    padding-bottom: 50px;
   }
 }
 
@@ -248,12 +242,9 @@ body {
   margin-bottom: 40px;
 }
 
-@supports not (gap: 20%) {
-  .available-city .available-city {
-    margin: 20%;
-  }
-  .available-city .available-city > * {
-    margin: 20%;
+@supports not (-webkit-gap: 20%) {
+  .available-city .france-map-text {
+    padding-left: 20%;
   }
 }
 
@@ -282,7 +273,7 @@ body {
   gap: 10px;
 }
 
-@supports not (gap: 10px) {
+@supports not (-webkit-gap: 10px) {
   .delivraide-info .delivraide-info {
     margin: 10px;
   }
@@ -517,12 +508,9 @@ body {
   gap: 40px;
 }
 
-@supports not (gap: 40px) {
-  .donation-wrapper .donation-column-wrapper .donation-column-wrapper {
-    margin: 40px;
-  }
-  .donation-wrapper .donation-column-wrapper .donation-column-wrapper > * {
-    margin: 40px;
+@supports not (-webkit-gap: 40px) {
+  .donation-wrapper .donation-column-wrapper .donation-title {
+    padding-bottom: 40px;
   }
 }
 
@@ -555,7 +543,7 @@ body {
   gap: 40px;
 }
 
-@supports not (gap: 40px) {
+@supports not (-webkit-gap: 40px) {
   .donation-wrapper .donation-parapgraph .donation-parapgraph {
     margin: 40px;
   }
@@ -606,12 +594,9 @@ body {
   margin-top: 40px;
 }
 
-@supports not (gap: 40px) {
-  .conclusion .recap .recap {
-    margin: 40px;
-  }
-  .conclusion .recap .recap > * {
-    margin: 40px;
+@supports not (-webkit-gap: 40px) {
+  .conclusion .recap * {
+    margin-bottom: 40px;
   }
 }
 
@@ -659,12 +644,12 @@ body {
   gap: 20px;
 }
 
-@supports not (gap: 20px) {
-  .conclusion footer .footer-column-wrapper .footer-left-column .footer-contact-section .footer-contact-section {
-    margin: 20px;
+@supports not (-webkit-gap: 20px) {
+  .conclusion footer .footer-column-wrapper .footer-left-column .footer-contact-section * {
+    margin-bottom: 10px;
   }
-  .conclusion footer .footer-column-wrapper .footer-left-column .footer-contact-section .footer-contact-section > * {
-    margin: 20px;
+  .conclusion footer .footer-column-wrapper .footer-left-column .footer-contact-section .instagram-logo {
+    margin-left: 15px;
   }
 }
 
@@ -681,7 +666,7 @@ body {
   gap: 50px;
 }
 
-@supports not (gap: 50px) {
+@supports not (-webkit-gap: 50px) {
   .conclusion footer .footer-column-wrapper .footer-left-column .footer-contact-section .contact-logo .contact-logo {
     margin: 50px;
   }
@@ -792,7 +777,7 @@ body {
     gap: 50px;
     text-align: center;
   }
-  @supports not (gap: 50px) {
+  @supports not (-webkit-gap: 50px) {
     .info-banner-column-wrapper .info-banner-column-wrapper {
       margin: 50px;
     }
@@ -825,7 +810,7 @@ body {
     text-align: center;
     margin-left: 0;
   }
-  @supports not (gap: 50px) {
+  @supports not (-webkit-gap: 50px) {
     .info-banner-reverse .info-banner-column-wrapper .banner-text .info-banner-reverse .info-banner-column-wrapper .banner-text {
       margin: 50px;
     }
@@ -895,7 +880,7 @@ body {
             flex-direction: column;
     gap: 45px;
   }
-  @supports not (gap: 45px) {
+  @supports not (-webkit-gap: 45px) {
     .media-section .media-wrapper .media-logo-container .media-logo-container {
       margin: 45px;
     }
@@ -929,12 +914,9 @@ body {
     gap: 20px;
     width: 80vw;
   }
-  @supports not (gap: 20px) {
-    .introduction-wrapper .introduction-column-wrapper .left-column .media-logo-container {
-      margin: 45px;
-    }
-    .introduction-wrapper .introduction-column-wrapper .left-column .media-logo-container > * {
-      margin: 45px;
+  @supports not (-webkit-gap: 20px) {
+    .introduction-wrapper .introduction-column-wrapper .left-column .hero-title {
+      padding-bottom: 20px;
     }
   }
   .introduction-wrapper .introduction-column-wrapper .left-column .hero-title {
