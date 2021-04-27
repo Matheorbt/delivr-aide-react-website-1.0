@@ -36,6 +36,14 @@
         justify-content: center;
         width: 80vw;
         gap: 40px;
+        @supports not (gap: 40px) {
+            .introduction-column-wrapper {
+            margin: -0.5em;
+            }
+            .introduction-column-wrapper > * {
+            margin: 0.5em;
+            }
+        }
         margin-bottom: 50px;
         .left-column {
             display: flex;
@@ -44,6 +52,14 @@
             flex-direction: column;
             font-family: $mainFont;
             gap: 50px;
+            @supports not (gap: 50px) {
+            .left-column {
+            margin: 50px;
+            }
+            .left-column > * {
+            margin: 50px;
+            }
+            }
             width: 50vw;
             .hero-title {
                 font-size: 3.75vw;
@@ -74,7 +90,6 @@
     border-radius: 169.5px 0px;
     width: 100%;
     margin-bottom: 40px;
-    overflow-x: hidden;
     .info-banner-column-wrapper {
         display: flex;
         align-items: center;
@@ -126,6 +141,14 @@
     justify-content: space-around;
     flex-direction: row;
     gap: 20%;
+    @supports not (gap: 20%) {
+        .available-city {
+            margin: 20%;
+        }
+        .available-city > * {
+            margin: 20%;
+        }
+    }
     margin-bottom: 40px;
     .france-map-text {
         font-family: $mainFont;
@@ -142,6 +165,14 @@
     margin-bottom: 40px;
     overflow: hidden;
     gap: 10px;
+    @supports not (gap: 10px) {
+        .delivraide-info{
+            margin: 10px;
+        }
+        .delivraide-info > * {
+            margin: 10px;
+        }
+    }
     @supports (-webkit-text-stroke: 3px $mainBlue) {
         .delivraide-info-title-stroke {
             -webkit-text-stroke: 3px $mainBlue;
@@ -297,6 +328,14 @@
         justify-content: flex-start;
         flex-direction: row;
         gap: 40px;
+        @supports not (gap: 40px) {
+        .donation-column-wrapper {
+            margin: 40px;
+        }
+        .donation-column-wrapper > * {
+            margin: 40px;
+        }
+        }
     }
     .donation-title {
         font-size: 3.75vw;
@@ -314,6 +353,14 @@
         align-items: flex-start;
         flex-direction: column;
         gap: 40px;
+        @supports not (gap: 40px) {
+            .donation-parapgraph {
+                margin: 40px;
+            }
+            .donation-parapgraph > * {
+                margin: 40px;
+            }
+        }
     }
     .donation-heart-illustration {
         height: 27.5vw;
@@ -334,6 +381,14 @@
         justify-content: center;
         flex-direction: column;
         gap: 40px;
+        @supports not (gap: 40px) {
+            .recap {
+                margin: 40px;
+            }
+            .recap > * {
+                margin: 40px;
+            }
+        }
         margin-top: 40px;
     }
     .recap-hero-title {
@@ -361,11 +416,27 @@
                     align-items: flex-start;
                     justify-content: center;
                     gap: 20px;
+                    @supports not (gap: 20px) {
+                        .footer-contact-section {
+                            margin: 20px;
+                        }
+                        .footer-contact-section > * {
+                            margin: 20px;
+                        }
+                    }
                     .contact-logo {
                         display: flex;
                         align-items: center;
                         justify-content: flex-start;
                         gap:50px;
+                        @supports not (gap: 50px) {
+                            .contact-logo {
+                                margin: 50px;
+                            }
+                            .contact-logo > * {
+                                margin: 50px;
+                            }
+                        }
                     }
                     .mail-logo {
                         transition: $shortTransition;
@@ -446,6 +517,14 @@
         padding-top: 20px;
         flex-direction: column;
         gap: 50px;
+        @supports not (gap: 50px) {
+            .info-banner-column-wrapper {
+                margin: 50px;
+            }
+            .info-banner-column-wrapper > * {
+                margin: 50px;
+            }
+        }
         text-align: center;
     }
     .info-banner .info-banner-column-wrapper .banner-img {
@@ -466,6 +545,14 @@
     .info-banner-reverse .info-banner-column-wrapper .banner-text {
         padding-top: 20px;
         gap: 50px;
+        @supports not (gap: 50px) {
+            .info-banner-reverse .info-banner-column-wrapper .banner-text {
+                margin: 50px;
+            }
+            .info-banner-reverse .info-banner-column-wrapper .banner-text > * {
+                margin: 50px;
+            }
+        }
         text-align: center;
         margin-left: 0;
     }
@@ -515,6 +602,14 @@
         .media-logo-container {
             flex-direction: column;
             gap: 45px;
+            @supports not (gap: 45px) {
+                .media-logo-container {
+                    margin: 45px;
+                }
+                .media-logo-container > * {
+                    margin: 45px;
+                }
+            }
             .france-inter {
                 height: 125px;
                 width: 125px;
@@ -542,6 +637,14 @@
 @media only screen and (max-device-width: 500px)  {
     .introduction-wrapper .introduction-column-wrapper .left-column {
         gap: 20px;
+        @supports not (gap: 20px) {
+                .media-logo-container {
+                    margin: 45px;
+                }
+                .media-logo-container > * {
+                    margin: 45px;
+                }
+            }
         width: 80vw;
     }
     .introduction-wrapper .introduction-column-wrapper .left-column .hero-title {

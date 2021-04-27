@@ -112,9 +112,9 @@ function App() {
                     <p className="media-caption">Ils parlent de nous</p>
                     <hr className="media-line"></hr>
                     <div className="media-logo-container">
-                        <a href="." target="_blank" rel="noreferr"><img className="france-inter" src={interLogo} alt="inter france" /></a>
-                        <a href="https://youtu.be/wTIirhT3Pqc" target="_blank" rel="noreferrer"><img className="brut" src={brutLogo} alt="brut" /></a>
-                        <a href="." target="_blank" rel="noreferr"><img className="figaro" src={figaroLogo} alt="le figaro" /></a>
+                        <img className="france-inter" src={interLogo} alt="inter france" />
+                        <img className="brut" src={brutLogo} alt="brut" />
+                        <img className="figaro" src={figaroLogo} alt="le figaro" />
                     </div>
                 </div>
             </section>
