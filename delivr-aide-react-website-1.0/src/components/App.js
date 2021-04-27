@@ -27,7 +27,6 @@ import carousselOne from '../props/img/carousel/carousel-image_kit.JPG'
 import carousselTwo from '../props/img/carousel/carousel-image_thanks.png'
 import carousselFour from '../props/img/carousel/carousel-image_car.png'
 import carousselFive from '../props/img/carousel/carousel-image_member_1.png'
-import carousselSix from '../props/img/carousel/carousel-image_kit.JPG'
 import carousselSeven from '../props/img/carousel/carousel-image_kit_example.png'
 
 import "slick-carousel/slick/slick.css";
@@ -100,7 +99,6 @@ function App() {
                     <Slider {...settings}>
                         <img className="slide-img four" src={carousselFour} alt="grouptest" />
                         <img className="slide-img two" src={carousselTwo} alt="grouptest" />
-                        <img className="slide-img six" src={carousselSix} alt="grouptest" />
                         <img className="slide-img five" src={carousselFive} alt="grouptest" />
                         <img className="slide-img seven" src={carousselSeven} alt="grouptest" />
                         <img className="slide-img one" src={carousselOne} alt="grouptest" />
