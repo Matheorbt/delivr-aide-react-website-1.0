@@ -539,7 +539,7 @@
     }
 }
 
-@media only screen and (max-device-width: 400px)  {
+@media only screen and (max-device-width: 500px)  {
     .introduction-wrapper .introduction-column-wrapper .left-column {
         gap: 20px;
         width: 80vw;
@@ -640,7 +640,6 @@
     }
     .caroussel-container {
         width: 90vw;
-        margin-left: 5%;
     }
     .media-section .media-wrapper .media-caption {
         font-size: 8vw;
