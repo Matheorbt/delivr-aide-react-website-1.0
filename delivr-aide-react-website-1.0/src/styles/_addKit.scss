@@ -20,8 +20,6 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            grid-gap: 40px;
-            gap: 40px;
             .add-kit-hero-title {
                 margin-top: 10vh;
                 color: var(--main-font-color);
@@ -33,70 +31,80 @@
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
-                grid-gap: 40px;
-                gap: 40px;
+                & > * {
+                    margin:.5em;
+                }
                 .form-firstname-lastname {
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     flex-direction: row;
-                    grid-gap: 40px;
-                    gap: 40px;
+                    & > * {
+                        margin:.5em;
+                    }
                 }
                 .form-city-info {
                     display: flex;
                     align-items: flex-start;
                     justify-content: center;
                     flex-direction: row;
-                    grid-gap: 40px;
-                    gap: 40px;
+                    & > * {
+                        margin:.5em;
+                    }
                 }
                 .form-first-name {
                     display: flex;
                     align-items: flex-start;
                     justify-content: center;
                     flex-direction: column;
-                    grid-gap: 25px;
-                    gap: 25px;
+                    & > * {
+                        margin:0.5em;
+                    }
                 }
                 .form-city-name {
                     display: flex;
                     align-items: flex-start;
                     justify-content: center;
                     flex-direction: column;
-                    gap: 25px;
+                    & > * {
+                        margin:.5em;
+                    }
                 }
                 .form-zip-code {
                     display: flex;
                     align-items: flex-start;
                     justify-content: center;
                     flex-direction: column;
-                    grid-gap: 25px;
-                    gap: 25px;
+                    & > * {
+                        margin:.5em;
+                    }
                 }
                 .form-number {
                     display: flex;
                     align-items: flex-start;
                     justify-content: center;
                     flex-direction: column;
-                    grid-gap: 25px;
-                    gap: 25px;
+                    & > * {
+                        margin:.5em;
+                    }
                 }
                 .form-email {
                     display: flex;
                     align-items: flex-start;
                     justify-content: center;
                     flex-direction: column;
-                    grid-gap: 40px;
-                    gap: 40px;
+                    & > * {
+                        margin:.5em;
+                    }
                 }
                 .form-account-connexion {
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     flex-direction: row;
-                    grid-gap: 40px;
-                    gap: 40px;
+                    & > * {
+                        margin:.5em;
+                    }
                 }
                 .form-submit {
                     background: transparent;
@@ -123,7 +131,9 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
-                gap: 20px;
+                & > * {
+                    margin:1.5em;
+                }
             }
             #confidentialité {
                 all: unset;
@@ -149,8 +159,9 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    grid-gap: 25px;
-    gap: 25px;
+    & > * {
+        margin:0.5em;
+    }
 }
 
 .form-wrapper label {

@@ -75,7 +75,7 @@ body {
 }
 
 .introduction-wrapper .introduction-btn {
-  margin-bottom: 45px;
+  margin-bottom: 0px;
 }
 
 .introduction-wrapper .introduction-column-wrapper {
@@ -95,7 +95,7 @@ body {
 
 @supports not (-webkit-gap: 40px) {
   .introduction-wrapper .introduction-column-wrapper .left-column {
-    padding-right: 40px;
+    padding-right: 10px;
   }
 }
 
@@ -119,7 +119,7 @@ body {
 
 @supports not (-webkit-gap: 50px) {
   .introduction-wrapper .introduction-column-wrapper .left-column .hero-title {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
   }
 }
 
@@ -1494,8 +1494,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  grid-gap: 40px;
-  gap: 40px;
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .add-kit-hero-title {
@@ -1519,8 +1517,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  grid-gap: 40px;
-  gap: 40px;
+}
+
+.main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper > * {
+  margin: .5em;
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-firstname-lastname {
@@ -1537,8 +1537,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  grid-gap: 40px;
-  gap: 40px;
+}
+
+.main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-firstname-lastname > * {
+  margin: .5em;
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-city-info {
@@ -1555,8 +1557,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  grid-gap: 40px;
-  gap: 40px;
+}
+
+.main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-city-info > * {
+  margin: .5em;
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-first-name {
@@ -1573,8 +1577,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  grid-gap: 25px;
-  gap: 25px;
+}
+
+.main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-first-name > * {
+  margin: 0.5em;
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-city-name {
@@ -1591,7 +1597,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 25px;
+}
+
+.main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-city-name > * {
+  margin: .5em;
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-zip-code {
@@ -1608,8 +1617,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  grid-gap: 25px;
-  gap: 25px;
+}
+
+.main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-zip-code > * {
+  margin: .5em;
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-number {
@@ -1626,8 +1637,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  grid-gap: 25px;
-  gap: 25px;
+}
+
+.main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-number > * {
+  margin: .5em;
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-email {
@@ -1644,8 +1657,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  grid-gap: 40px;
-  gap: 40px;
+}
+
+.main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-email > * {
+  margin: .5em;
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-account-connexion {
@@ -1662,8 +1677,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  grid-gap: 40px;
-  gap: 40px;
+}
+
+.main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-account-connexion > * {
+  margin: .5em;
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-submit {
@@ -1701,7 +1718,10 @@ body {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  gap: 20px;
+}
+
+.main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .politique-div > * {
+  margin: 1.5em;
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper #confidentialité {
@@ -1737,8 +1757,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  grid-gap: 25px;
-  gap: 25px;
+}
+
+.form-last-name > * {
+  margin: 0.5em;
 }
 
 .form-wrapper label {
