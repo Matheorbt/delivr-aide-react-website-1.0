@@ -264,20 +264,50 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
-            .france-inter {
-                height: 250px;
-                width: 250px;
-            }
-            .figaro {
-                height: 100px;
-                width: 420px;
-            }
-            .brut {
-                height: 100px;
-                width: 420px;
+            gap: 45px;
+            @supports not (-webkit-gap: 45px) {
+                &>* {
+                    margin-left: 15px;
+                }
             }
         }
-    }
+            .france-inter {
+                height: 125px;
+                width: 125px;
+            }
+            .brut {
+                height: 50px;
+                width: 210px;
+            }
+            .Phenyx {
+                height: 100px;
+                width: 100px;
+            }
+            .FranceTrois {
+                height: 50px;
+                width: 150px;
+            }
+            .Letudiant {
+                height: 50px;
+                width: 150px;
+            }
+            .FranceInfo {
+                height: 125px;
+                width: 166px;
+            }
+            .Mediavenir {
+                height: 100px;
+                width: 100px;
+            }
+            .Franprix {
+                height: 65px;
+                width: 200px;
+            }
+            .LaGazetteMontpellier {
+                height: 50px;
+                width: 150px;
+            }
+        }
 }
 
 .info-banner-column-wrapper {
@@ -362,10 +392,10 @@
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
-        gap: 40px;
+        gap: 20px;
         @supports not (-webkit-gap: 40px) {
             * {
-                margin-bottom: 40px;
+                margin-bottom: 20px;
             }
         }
         margin-top: 40px;
@@ -400,7 +430,7 @@
                             margin-bottom: 10px;
                         }
                         .instagram-logo {
-                            margin-left:15px ;
+                            margin-left:0px ;
                         }
                     }
                     .contact-logo {
@@ -482,6 +512,9 @@
 @media only screen and (max-device-width: 1830px)  {
     .introduction-wrapper .introduction-column-wrapper .left-column .hero-title {
         font-size: 3.5vw;
+    }
+    .media-section .media-wrapper .media-logo-container {
+            flex-direction: column;
     }
 }
 
@@ -588,27 +621,47 @@
             width: 90vw;
         }
         .media-logo-container {
-            flex-direction: column;
             gap: 45px;
             @supports not (-webkit-gap: 45px) {
-                .media-logo-container {
-                    margin: 45px;
-                }
-                .media-logo-container > * {
-                    margin: 45px;
+                &>* {
+                    margin-top: 45px;
                 }
             }
             .france-inter {
                 height: 125px;
                 width: 125px;
             }
-            .figaro {
-                height: 50px;
-                width: 210px;
-            }
             .brut {
                 height: 50px;
                 width: 210px;
+            }
+            .Phenyx {
+                height: 125px;
+                width: 125px;
+            }
+            .FranceTrois {
+                height: 50px;
+                width: 150px;
+            }
+            .Letudiant {
+                height: 50px;
+                width: 150px;
+            }
+            .FranceInfo {
+                height: 125px;
+                width: 166px;
+            }
+            .Mediavenir {
+                height: 150px;
+                width: 150px;
+            }
+            .Franprix {
+                height: 65px;
+                width: 200px;
+            }
+            .LaGazetteMontpellier {
+                height: 50px;
+                width: 150px;
             }
         }
     }
@@ -633,10 +686,11 @@
         width: 80vw;
     }
     .introduction-wrapper .introduction-column-wrapper .left-column .hero-title {
-        font-size: 7vw;
+        font-size: 9vw;
     }
     .introduction-wrapper .introduction-column-wrapper .left-column .hero-description {
         font-size: 4vw;
+        margin-bottom: 20px;
     }
     .introduction-wrapper .introduction-column-wrapper {
         margin-bottom: 20px;
@@ -750,6 +804,12 @@
     .donation-wrapper {
         overflow:hidden;
     }
+    .donation-wrapper .donation-heart-illustration {
+        margin-bottom: 40px;
+    }
+    .heartContainerTextCopyright {
+        margin-bottom: 40px;
+    }
     .donation-wrapper .donation-title {
         font-size: 7vw;
     }
@@ -771,6 +831,9 @@
     }
     .conclusion .recap-sub-title {
         font-size: 8vw;
+    }
+    .conclusion footer .footer-column-wrapper .footer-left-column {
+        padding-left:20px ;
     }
     .conclusion footer .footer-column-wrapper .footer-left-column .footer-contact-section img {
         width: 35px;

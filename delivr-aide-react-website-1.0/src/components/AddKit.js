@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import emailjs from 'emailjs-com'
 import { init } from 'emailjs-com';
 
+
 function AddKit() {
     function ScrollToTopOnMount() {
         useEffect(() => {
@@ -76,4 +77,4 @@ function AddKit() {
     )
 }
 
-export default AddKit
+export default AddKit;

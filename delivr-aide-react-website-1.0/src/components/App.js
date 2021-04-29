@@ -18,9 +18,14 @@ import logoFooter from '../props/img/logo-footer.png'
 //Logo media
 
 import brutLogo from '../props/svg/Brut_logo.svg'
-import figaroLogo from '../props/svg/Le_Figaro_logo.svg'
 import interLogo from '../props/svg/France_Inter_logo.svg'
-
+import Phenyx from '../props/svg/Phenyx_logo.png'
+import FranceTrois from '../props/svg/FranceTrois_logo.svg'
+import Letudiant from '../props/svg/Letudiant_logo.png'
+import FranceInfo from '../props/svg/FranceInfo_logo.png'
+import Mediavenir from '../props/svg/Mediavenir_logo.png'
+import Franprix from '../props/svg/Franprix_logo.png'
+import LaGazetteMontpellier from '../props/svg/LaGazetteMontpellier_logo.jpg'
 
 //Caroussel picture
 import carousselOne from '../props/img/carousel/carousel-image_kit.JPG'
@@ -41,7 +46,6 @@ function App() {
     var totalDelivery = 478;
     const settings = {
         dots: true,
-        arrows: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -112,7 +116,13 @@ function App() {
                     <div className="media-logo-container">
                         <img className="france-inter" src={interLogo} alt="inter france" />
                         <img className="brut" src={brutLogo} alt="brut" />
-                        <img className="figaro" src={figaroLogo} alt="le figaro" />
+                        <img className="FranceTrois" src={FranceTrois} alt="FranceTrois" />
+                        <img className="Phenyx" src={Phenyx} alt="Phenyx" />
+                        <img className="Letudiant" src={Letudiant} alt="L'étudiant" />
+                        <img className="Mediavenir" src={Mediavenir} alt="Mediavenir" />
+                        <img className="Franprix" src={Franprix} alt="Franprix" />
+                        <img className="LaGazetteMontpellier" src={LaGazetteMontpellier} alt="La Gazette Montpellier" />
+                        <img className="FranceInfo" src={FranceInfo} alt="France Info" />
                     </div>
                 </div>
             </section>
