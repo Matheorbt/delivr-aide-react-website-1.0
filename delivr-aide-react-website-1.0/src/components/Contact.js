@@ -27,7 +27,7 @@ function Contact() {
                     <a href="https://www.instagram.com/equipagesolidaire/" target="_blank" rel="noreferrer"><img className="contact-logo insta" src={instagramLogo} alt="instagram"></img></a>
                     <p className="contact-page-contact">Notre linkedin:</p>
                     <a href="https://www.linkedin.com/company/equipagesolidaire" target="_blank" rel="noreferrer"><img className="contact-logo linkedin" src={linkedinLogo} alt="linkedin"></img></a>
-                    <p className="contact-page-contact mail">Notre mail: <br /><span>delivraide.beneficiaire@gmail.com</span></p>
+                    <p className="contact-page-contact mail">Notre mail: <br /><span>equipagesolidaire@gmail.com</span></p>
                 </div>
             </div>
         </>

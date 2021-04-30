@@ -307,6 +307,14 @@
                 height: 50px;
                 width: 150px;
             }
+            .Mce {
+                height: 75px;
+                width: 50x;
+            }
+            .RadioStreet {
+                height: 150px;
+                width: 275px;
+            }
         }
 }
 
@@ -513,6 +521,9 @@
     .introduction-wrapper .introduction-column-wrapper .left-column .hero-title {
         font-size: 3.5vw;
     }
+}
+
+@media only screen and (max-device-width: 1400px)  {
     .media-section .media-wrapper .media-logo-container {
         flex-direction: column;
         gap: 45px;
@@ -522,9 +533,6 @@
                 }
             }
     }
-}
-
-@media only screen and (max-device-width: 1400px)  {
     .introduction-wrapper .introduction-column-wrapper .left-column .hero-title {
         font-size: 6vw;
     }

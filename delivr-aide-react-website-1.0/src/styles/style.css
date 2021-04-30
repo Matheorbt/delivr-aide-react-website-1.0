@@ -478,6 +478,16 @@ body > * {
   width: 150px;
 }
 
+.media-section .media-wrapper .Mce {
+  height: 75px;
+  width: 50x;
+}
+
+.media-section .media-wrapper .RadioStreet {
+  height: 150px;
+  width: 275px;
+}
+
 .info-banner-column-wrapper .checklist-illustration {
   width: 32vw;
   height: 40vw;
@@ -788,6 +798,9 @@ body > * {
   .introduction-wrapper .introduction-column-wrapper .left-column .hero-title {
     font-size: 3.5vw;
   }
+}
+
+@media only screen and (max-device-width: 1400px) {
   .media-section .media-wrapper .media-logo-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -800,9 +813,6 @@ body > * {
       margin-top: 45px;
     }
   }
-}
-
-@media only screen and (max-device-width: 1400px) {
   .introduction-wrapper .introduction-column-wrapper .left-column .hero-title {
     font-size: 6vw;
   }

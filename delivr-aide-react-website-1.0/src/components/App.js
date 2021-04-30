@@ -26,6 +26,8 @@ import FranceInfo from '../props/svg/FranceInfo_logo.png'
 import Mediavenir from '../props/svg/Mediavenir_logo.png'
 import Franprix from '../props/svg/Franprix_logo.png'
 import LaGazetteMontpellier from '../props/svg/LaGazetteMontpellier_logo.jpg'
+import RadioStreet from '../props/svg/RadioStreet_logo.png'
+import MCE from '../props/svg/MCE_logo.png'
 
 //Caroussel picture
 import carousselOne from '../props/img/carousel/carousel-image_kit.JPG'
@@ -41,9 +43,9 @@ function App() {
     AOS.init({
         duration: 2000
     });
-    var deliveryMan = 145;
+    var deliveryMan = 230;
     var cityAvailaible = 6;
-    var totalDelivery = 478;
+    var totalDelivery = 578;
     const settings = {
         dots: true,
         infinite: true,
@@ -83,7 +85,7 @@ function App() {
             </div>
             <div className="available-city">
                 <img src={franceMap} alt="map of france with every handled city" className="france-map-img" data-aos="fade-right"></img>
-                <p className="france-map-text" data-aos="fade-left">Là où il y’a besoin d’aide Delivr’aide est là.</p>
+                <p className="france-map-text" data-aos="fade-left">Livrer directement à domicile dans plusieurs grandes villes de France.</p>
             </div>
             <div className="info-banner-reverse banner-fresh-product">
                 <div className="info-banner-column-wrapper">
@@ -113,16 +115,22 @@ function App() {
                 <div className="media-wrapper">
                     <p className="media-caption">Ils parlent de nous</p>
                     <hr className="media-line"></hr>
-                    <div className="media-logo-container">
-                        <img className="france-inter" src={interLogo} alt="inter france" />
-                        <img className="brut" src={brutLogo} alt="brut" />
-                        <img className="FranceTrois" src={FranceTrois} alt="FranceTrois" />
-                        <img className="Phenyx" src={Phenyx} alt="Phenyx" />
-                        <img className="Letudiant" src={Letudiant} alt="L'étudiant" />
-                        <img className="Mediavenir" src={Mediavenir} alt="Mediavenir" />
-                        <img className="Franprix" src={Franprix} alt="Franprix" />
-                        <img className="LaGazetteMontpellier" src={LaGazetteMontpellier} alt="La Gazette Montpellier" />
-                        <img className="FranceInfo" src={FranceInfo} alt="France Info" />
+                    <div className="media-logo-container-main">
+                        <div className="media-logo-container sub-container-logo">
+                            <img className="france-inter" src={interLogo} alt="inter france" />
+                            <img className="brut" src={brutLogo} alt="brut" />
+                            <img className="FranceTrois" src={FranceTrois} alt="FranceTrois" />
+                            <img className="Phenyx" src={Phenyx} alt="Phenyx" />
+                            <img className="Letudiant" src={Letudiant} alt="L'étudiant" />
+                            <img className="Mediavenir" src={Mediavenir} alt="Mediavenir" />
+                        </div>
+                        <div className="media-logo-container sub-container-logo">
+                            <img className="Franprix" src={Franprix} alt="Franprix" />
+                            <img className="LaGazetteMontpellier" src={LaGazetteMontpellier} alt="La Gazette Montpellier" />
+                            <img className="FranceInfo" src={FranceInfo} alt="France Info" />
+                            <img className="Mce" src={MCE} alt="France Info" />
+                            <img className="RadioStreet" src={RadioStreet} alt="Radio street" />
+                        </div>
                     </div>
                 </div>
             </section>
