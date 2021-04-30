@@ -515,6 +515,12 @@
     }
     .media-section .media-wrapper .media-logo-container {
         flex-direction: column;
+        gap: 45px;
+            @supports not (-webkit-gap: 45px) {
+                &>* {
+                    margin-top: 45px;
+                }
+            }
     }
 }
 
