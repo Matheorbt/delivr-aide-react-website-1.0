@@ -16,11 +16,11 @@ function AddKit() {
     function sendEmail(e) {
         e.preventDefault();
         init("user_aG1Z8D5rPKDmniQSHKKH9");
-
         emailjs.sendForm('service_fdhkoz3', 'template_wnlrxrk', '#formKit')
             .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
+                window.alert("Merci ta demande a bien été prise en compte ! 👍")
             }, function (error) {
+                window.alert("Un problème est survenu, merci de réessayer ultérieurement, si le problème persiste merci de nous contacte à : equipagesolidaire@gmail.com")
                 console.log('FAILED...', error);
             });
         e.target.reset()
@@ -46,7 +46,15 @@ function AddKit() {
                             <div className="form-city-info">
                                 <div className="form-city-name">
                                     <label>Ville :</label>
-                                    <input type="text" name="city" id="city" className="addKitInputForm" required></input>
+                                    <select type="text" name="city" id="city" className="addKitInputForm" required>
+                                        <option value="">Choisis ta ville</option>
+                                        <option value="Paris">Paris</option>
+                                        <option value="Montreuil">Montreuil</option>
+                                        <option value="Viroflay">Viroflay</option>
+                                        <option value="Vélizy-Villacoublay">Vélizy-Villacoublay</option>
+                                        <opion value="Lyon">Lyon</opion>
+                                        <option value="Montpellier">Montpellier</option>
+                                    </select>
                                 </div>
                                 <div className="form-zip-code">
                                     <label>Code postal :</label>
