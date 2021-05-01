@@ -1879,6 +1879,11 @@ body > * {
   font-size: 2vw;
 }
 
+#city {
+  font-family: var(--main-font);
+  font-size: 2vw;
+}
+
 .form-wrapper input:focus {
   outline: none;
   background: transparent;
@@ -1923,6 +1928,7 @@ body > * {
   }
   #phoneNumber, #firstName, #lastName, #city, #zipCode, #adress, #phoneNumber, #mail, #confidentialité {
     font-size: 6vw;
+    font-family: var(--main-font);
   }
   .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-submit {
     font-size: 8vw;
