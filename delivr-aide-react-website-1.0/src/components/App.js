@@ -85,7 +85,7 @@ function App() {
             </div>
             <div className="available-city">
                 <img src={franceMap} alt="map of france with every handled city" className="france-map-img" data-aos="fade-right"></img>
-                <p className="france-map-text" data-aos="fade-left">Livrer directement à domicile dans plusieurs grandes villes de France.</p>
+                <p className="france-map-text" data-aos="fade-left">Livrés directement à domicile dans plusieurs grandes villes de France.</p>
             </div>
             <div className="info-banner-reverse banner-fresh-product">
                 <div className="info-banner-column-wrapper">

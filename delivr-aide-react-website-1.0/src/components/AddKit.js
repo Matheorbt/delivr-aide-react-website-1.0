@@ -15,9 +15,9 @@ function AddKit() {
 
     function sendEmail(e) {
         e.preventDefault();
-        init("user_Nh0h5ghTV3VVccDb4TSqH");
+        init("user_aG1Z8D5rPKDmniQSHKKH9");
 
-        emailjs.sendForm('service_xrwqzwt', 'template_51nprxi', '#formKit')
+        emailjs.sendForm('service_fdhkoz3', 'template_wnlrxrk', '#formKit')
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
             }, function (error) {
