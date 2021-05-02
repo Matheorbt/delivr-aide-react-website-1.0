@@ -30,11 +30,27 @@ import RadioStreet from '../props/svg/RadioStreet_logo.png'
 import MCE from '../props/svg/MCE_logo.png'
 
 //Caroussel picture
-import carousselOne from '../props/img/carousel/carousel-image_kit.JPG'
-import carousselTwo from '../props/img/carousel/carousel-image_thanks.png'
-import carousselFour from '../props/img/carousel/carousel-image_car.png'
-import carousselFive from '../props/img/carousel/carousel-image_member_1.png'
-import carousselSeven from '../props/img/carousel/carousel-image_kit_example.png'
+
+// Thanks picture
+import carousselThanksOne from '../props/img/carousel/carousel-image_thanks_1.png'
+import carousselThanksTwo from '../props/img/carousel/carousel-image_thanks_8.png'
+import carousselThanksThree from '../props/img/carousel/carousel-image_thanks_9.png'
+import carousselThanksFour from '../props/img/carousel/carousel-image_thanks_3.jpg'
+import carousselThanksFive from '../props/img/carousel/carousel-image_thanks_10.png'
+import carousselThanksSix from '../props/img/carousel/carousel-image_thanks_5.jpg'
+import carousselThanksSeven from '../props/img/carousel/carousel-image_thanks_6.jpg'
+import carousselThanksEight from '../props/img/carousel/carousel-image_thanks_7.png'
+// Member picture
+import carousselMemberOne from '../props/img/carousel/carousel-image_member_1.png'
+import carousselMemberTwo from '../props/img/carousel/carousel-image_member_2.png'
+import carousselMemberThree from '../props/img/carousel/carousel-image_member_3.png'
+import carousselMemberFour from '../props/img/carousel/carousel-image_member_4.png'
+// Kit content picture
+import carousselKitContentOne from '../props/img/carousel/carousel-image_kit_content_1.png'
+import carousselKitContentTwo from '../props/img/carousel/carousel-image_kit_content_2.png'
+import carousselKitContentThree from '../props/img/carousel/carousel-image_kit_content_5.png'
+import carousselKitContentFour from '../props/img/carousel/carousel-image_kit_content_4.png'
+import carousselKitContentFive from '../props/img/carousel/carousel-image_kit_content_3.png'
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -47,7 +63,6 @@ function App() {
     var cityAvailaible = 6;
     var totalDelivery = 578;
     const settings = {
-        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -103,11 +118,23 @@ function App() {
             <div className="caroussel-container-wrapper" data-aos="fade-right">
                 <div className="caroussel-container">
                     <Slider {...settings}>
-                        <img className="slide-img four" src={carousselFour} alt="grouptest" />
-                        <img className="slide-img two" src={carousselTwo} alt="grouptest" />
-                        <img className="slide-img five" src={carousselFive} alt="grouptest" />
-                        <img className="slide-img seven" src={carousselSeven} alt="grouptest" />
-                        <img className="slide-img one" src={carousselOne} alt="grouptest" />
+                        <img className="slide-img two" src={carousselMemberOne} alt="grouptest" />
+                        <img className="slide-img five" src={carousselThanksOne} alt="grouptest" />
+                        <img className="slide-img five" src={carousselKitContentOne} alt="grouptest" />
+                        <img className="slide-img five" src={carousselThanksTwo} alt="grouptest" />
+                        <img className="slide-img five" src={carousselKitContentFour} alt="grouptest" />
+                        <img className="slide-img five" src={carousselThanksThree} alt="grouptest" />
+                        <img className="slide-img five" src={carousselKitContentThree} alt="grouptest" />
+                        <img className="slide-img five" src={carousselThanksFour} alt="grouptest" />
+                        <img className="slide-img five" src={carousselMemberTwo} alt="grouptest" />
+                        <img className="slide-img five" src={carousselThanksFive} alt="grouptest" />
+                        <img className="slide-img five" src={carousselMemberThree} alt="grouptest" />
+                        <img className="slide-img five" src={carousselThanksSeven} alt="grouptest" />
+                        <img className="slide-img five" src={carousselKitContentFive} alt="grouptest" />
+                        <img className="slide-img five" src={carousselMemberFour} alt="grouptest" />
+                        <img className="slide-img five" src={carousselThanksSix} alt="grouptest" />
+                        <img className="slide-img five" src={carousselKitContentTwo} alt="grouptest" />
+                        <img className="slide-img five" src={carousselThanksEight} alt="grouptest" />
                     </Slider>
                 </div>
             </div>
