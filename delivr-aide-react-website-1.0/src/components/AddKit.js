@@ -3,6 +3,7 @@ import '../styles/style.css';
 import { useEffect } from "react";
 import emailjs from 'emailjs-com'
 import { init } from 'emailjs-com';
+require('dotenv').config();
 
 
 function AddKit() {
@@ -12,11 +13,10 @@ function AddKit() {
         }, []);
         return null;
     }
-
     function sendEmail(e) {
         e.preventDefault();
-        init("user_aG1Z8D5rPKDmniQSHKKH9");
-        emailjs.sendForm('service_fdhkoz3', 'template_wnlrxrk', '#formKit')
+        init("user_" + process.env.REACT_APP_USER_KEY);
+        emailjs.sendForm('service_' + process.env.REACT_APP_SERVICE_KEY, 'template_' + process.env.REACT_APP_TEMPLATE_KEY, '#formKit')
             .then(function (response) {
                 window.alert("Merci ta demande a bien été prise en compte ! 👍")
             }, function (error) {
@@ -25,6 +25,7 @@ function AddKit() {
             });
         e.target.reset()
     }
+    console.log(process.env.USER_KEY);
     return (
         <>
             <ScrollToTopOnMount />

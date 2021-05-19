@@ -1489,6 +1489,10 @@ body > * {
   font-size: 24px;
 }
 
+.about-section-validation > * {
+  margin-bottom: 40px;
+}
+
 .div-li-politique {
   color: white;
   font-size: 1.3em;

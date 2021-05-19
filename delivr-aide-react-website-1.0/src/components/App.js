@@ -59,9 +59,9 @@ function App() {
     AOS.init({
         duration: 2000
     });
-    var deliveryMan = 230;
+    var deliveryMan = 244;
     var cityAvailaible = 6;
-    var totalDelivery = 578;
+    var totalDelivery = 836;
     const settings = {
         infinite: true,
         speed: 500,
@@ -215,7 +215,7 @@ function App() {
                                 </div>
                             </div>
                             <div className="footer-right-column">
-                                <img src={logoFooter} alt="delivraide logo"></img>
+                                <img src={logoFooter} alt="delivr'aide logo"></img>
                             </div>
                         </div>
                         <hr></hr>
