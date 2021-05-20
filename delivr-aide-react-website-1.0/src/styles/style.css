@@ -488,6 +488,11 @@ body > * {
   width: 275px;
 }
 
+.media-section .media-wrapper .fondationCarrefour {
+  height: 150px;
+  width: 200px;
+}
+
 .info-banner-column-wrapper .checklist-illustration {
   width: 32vw;
   height: 40vw;
@@ -810,7 +815,8 @@ body > * {
   }
   @supports not (-webkit-gap: 45px) {
     .media-section .media-wrapper .media-logo-container > * {
-      margin-top: 45px;
+      margin-top: 25px;
+      margin-left: 0px;
     }
   }
   .introduction-wrapper .introduction-column-wrapper .left-column .hero-title {

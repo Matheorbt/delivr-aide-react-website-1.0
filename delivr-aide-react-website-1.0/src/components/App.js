@@ -27,6 +27,7 @@ import Mediavenir from '../props/svg/Mediavenir_logo.png'
 import Franprix from '../props/svg/Franprix_logo.png'
 import LaGazetteMontpellier from '../props/svg/LaGazetteMontpellier_logo.jpg'
 import RadioStreet from '../props/svg/RadioStreet_logo.png'
+import FondationCarrefour from '../props/svg/logo-fondation-carrefour.png'
 import MCE from '../props/svg/MCE_logo.png'
 
 //Caroussel picture
@@ -51,6 +52,8 @@ import carousselKitContentTwo from '../props/img/carousel/carousel-image_kit_con
 import carousselKitContentThree from '../props/img/carousel/carousel-image_kit_content_5.png'
 import carousselKitContentFour from '../props/img/carousel/carousel-image_kit_content_4.png'
 import carousselKitContentFive from '../props/img/carousel/carousel-image_kit_content_3.png'
+import carousselKitContentSix from '../props/img/carousel/carousel-image_kit_content_6.png'
+import carousselKitContentSeven from '../props/img/carousel/carousel-image_kit_content_7.png'
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -127,6 +130,7 @@ function App() {
                         <img className="slide-img five" src={carousselKitContentThree} alt="grouptest" />
                         <img className="slide-img five" src={carousselThanksFour} alt="grouptest" />
                         <img className="slide-img five" src={carousselMemberTwo} alt="grouptest" />
+                        <img className="slide-img five" src={carousselKitContentSeven} alt="grouptest" />
                         <img className="slide-img five" src={carousselThanksFive} alt="grouptest" />
                         <img className="slide-img five" src={carousselMemberThree} alt="grouptest" />
                         <img className="slide-img five" src={carousselThanksSeven} alt="grouptest" />
@@ -135,6 +139,7 @@ function App() {
                         <img className="slide-img five" src={carousselThanksSix} alt="grouptest" />
                         <img className="slide-img five" src={carousselKitContentTwo} alt="grouptest" />
                         <img className="slide-img five" src={carousselThanksEight} alt="grouptest" />
+                        <img className="slide-img five" src={carousselKitContentSix} alt="grouptest" />
                     </Slider>
                 </div>
             </div>
@@ -156,6 +161,7 @@ function App() {
                             <img className="LaGazetteMontpellier" src={LaGazetteMontpellier} alt="La Gazette Montpellier" />
                             <img className="FranceInfo" src={FranceInfo} alt="France Info" />
                             <img className="Mce" src={MCE} alt="France Info" />
+                            <img className="fondationCarrefour" src={FondationCarrefour} alt="France Info" />
                             <img className="RadioStreet" src={RadioStreet} alt="Radio street" />
                         </div>
                     </div>
