@@ -59,9 +59,9 @@ function App() {
     AOS.init({
         duration: 2000
     });
-    var deliveryMan = 244;
+    var deliveryMan = 298;
     var cityAvailaible = 6;
-    var totalDelivery = 836;
+    var totalDelivery = 1162;
     const settings = {
         infinite: true,
         speed: 500,
