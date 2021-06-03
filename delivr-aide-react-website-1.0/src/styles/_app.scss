@@ -317,6 +317,10 @@
                 height: 150px;
                 width: 275px;
             }
+            .fondationCarrefour {
+                height: 150px;
+                width: 200px;
+            }
         }
 }
 
@@ -531,7 +535,8 @@
         gap: 45px;
             @supports not (-webkit-gap: 45px) {
                 &>* {
-                    margin-top: 45px;
+                    margin-top: 25px;
+                    margin-left: 0px;
                 }
             }
     }
