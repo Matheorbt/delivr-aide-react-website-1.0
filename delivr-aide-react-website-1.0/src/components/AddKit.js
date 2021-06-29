@@ -53,7 +53,7 @@ function AddKit() {
                                         <option value="Montreuil">Montreuil</option>
                                         <option value="Viroflay">Viroflay</option>
                                         <option value="Vélizy-Villacoublay">Vélizy-Villacoublay</option>
-                                        <opion value="Lyon">Lyon</opion>
+                                        <option value="Lyon">Lyon</option>
                                         <option value="Montpellier">Montpellier</option>
                                     </select>
                                 </div>

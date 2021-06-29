@@ -23,7 +23,7 @@ function Routing() {
                     <Route exact path="/">
                         <App />
                     </Route>
-                    <Route exact path="/contact">
+                    <Route path="/contact">
                         <Contact />
                     </Route>
                     <Route path="/politique">
