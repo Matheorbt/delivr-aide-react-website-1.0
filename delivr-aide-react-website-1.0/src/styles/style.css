@@ -158,8 +158,8 @@ body > * {
 }
 
 .info-banner {
-  background: -webkit-gradient(linear, left top, right top, from(#3597D3), to(#E84C3C));
-  background: linear-gradient(90deg, #3597D3 0%, #E84C3C 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#3597d3), to(#e84c3c));
+  background: linear-gradient(90deg, #3597d3 0%, #e84c3c 100%);
   border-radius: 169.5px 0px;
   width: 100%;
   margin-bottom: 40px;
@@ -194,8 +194,8 @@ body > * {
 }
 
 .info-banner-reverse {
-  background: -webkit-gradient(linear, left top, right top, from(#3597D3), to(#E84C3C));
-  background: linear-gradient(90deg, #3597D3 0%, #E84C3C 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#3597d3), to(#e84c3c));
+  background: linear-gradient(90deg, #3597d3 0%, #e84c3c 100%);
   border-radius: 0px 169.5px;
   width: 100%;
   margin-bottom: 40px;
@@ -480,7 +480,7 @@ body > * {
   width: 150px;
 }
 
-.media-section .media-wrapper .Mce {
+.media-section .media-wrapper .Nexity {
   height: 75px;
   width: 50x;
 }
@@ -574,7 +574,7 @@ body > * {
 .donation-wrapper .donation-description {
   font-size: 1.75vw;
   font-family: "Fredoka One", cursive;
-  color: #A1A0A0;
+  color: #a1a0a0;
 }
 
 .donation-wrapper .donation-parapgraph {
@@ -609,8 +609,8 @@ body > * {
 }
 
 .conclusion {
-  background: -webkit-gradient(linear, left top, left bottom, from(#3597D3), to(#000000));
-  background: linear-gradient(180deg, #3597D3 0%, #000000 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#3597d3), to(#000000));
+  background: linear-gradient(180deg, #3597d3 0%, #000000 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -824,7 +824,10 @@ body > * {
   .introduction-wrapper .introduction-column-wrapper .left-column .hero-title {
     font-size: 6vw;
   }
-  .introduction-wrapper .introduction-column-wrapper .left-column .hero-description {
+  .introduction-wrapper
+.introduction-column-wrapper
+.left-column
+.hero-description {
     font-size: 3.75vw;
   }
   .introduction-sub-wrapper {
@@ -1012,7 +1015,10 @@ body > * {
   .introduction-wrapper .introduction-column-wrapper .left-column .hero-title {
     font-size: 9vw;
   }
-  .introduction-wrapper .introduction-column-wrapper .left-column .hero-description {
+  .introduction-wrapper
+.introduction-column-wrapper
+.left-column
+.hero-description {
     font-size: 4vw;
     margin-bottom: 20px;
   }
@@ -1020,7 +1026,10 @@ body > * {
     margin-bottom: 20px;
     width: 100%;
   }
-  .introduction-wrapper .introduction-column-wrapper .right-column .hero-banner {
+  .introduction-wrapper
+.introduction-column-wrapper
+.right-column
+.hero-banner {
     width: 80vw;
   }
   .info-banner .info-banner-column-wrapper .banner-text {
@@ -1093,17 +1102,23 @@ body > * {
   .delivraide-info .delivraide-info-title {
     font-size: 8.5vw;
   }
-  .delivraide-info .delivraide-info-stat-delivery-man .delivraide-info-stat-stroke {
+  .delivraide-info
+.delivraide-info-stat-delivery-man
+.delivraide-info-stat-stroke {
     font-size: 15vw;
   }
-  .delivraide-info .delivraide-info-stat-availaible-city .delivraide-info-stat-stroke {
+  .delivraide-info
+.delivraide-info-stat-availaible-city
+.delivraide-info-stat-stroke {
     font-size: 15vw;
   }
-  .delivraide-info .delivraide-info-stat-total-delivery .delivraide-info-stat-stroke {
+  .delivraide-info
+.delivraide-info-stat-total-delivery
+.delivraide-info-stat-stroke {
     font-size: 15vw;
   }
   .delivraide-info .delivraide-info-title-stroke {
-    -webkit-text-stroke: 2px #4295D3;
+    -webkit-text-stroke: 2px #4295d3;
   }
   .delivraide-info .delivraide-info-stat-delivery-man {
     font-size: 7vw;
@@ -1181,10 +1196,20 @@ body > * {
   .conclusion footer .footer-column-wrapper .footer-left-column {
     padding-left: 20px;
   }
-  .conclusion footer .footer-column-wrapper .footer-left-column .footer-contact-section img {
+  .conclusion
+footer
+.footer-column-wrapper
+.footer-left-column
+.footer-contact-section
+img {
     width: 35px;
   }
-  .conclusion footer .footer-column-wrapper .footer-left-column .footer-contact-section .contact-logo {
+  .conclusion
+footer
+.footer-column-wrapper
+.footer-left-column
+.footer-contact-section
+.contact-logo {
     gap: 15px;
   }
   .conclusion footer .footer-column-wrapper .footer-contact-description {
@@ -1193,7 +1218,12 @@ body > * {
   .conclusion footer .footer-column-wrapper .footer-contact-title {
     font-size: 8vw;
   }
-  .conclusion footer .footer-column-wrapper .footer-left-column .footer-contact-section .instagram-logo {
+  .conclusion
+footer
+.footer-column-wrapper
+.footer-left-column
+.footer-contact-section
+.instagram-logo {
     width: 50px;
   }
   .conclusion footer .footer-copyright {

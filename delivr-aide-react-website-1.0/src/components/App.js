@@ -28,7 +28,7 @@ import Franprix from "../props/svg/Franprix_logo.png";
 import LaGazetteMontpellier from "../props/svg/LaGazetteMontpellier_logo.jpg";
 import RadioStreet from "../props/svg/RadioStreet_logo.png";
 import FondationCarrefour from "../props/svg/logo-fondation-carrefour.png";
-import MCE from "../props/svg/MCE_logo.png";
+import Nexity from "../props/svg/logo-nexity-1200.png";
 
 //Caroussel picture
 
@@ -310,7 +310,7 @@ function App() {
                 alt="La Gazette Montpellier"
               />
               <img className="FranceInfo" src={FranceInfo} alt="France Info" />
-              <img className="Mce" src={MCE} alt="France Info" />
+              <img className="Nexity" src={Nexity} alt="Nexity" />
               <img
                 className="fondationCarrefour"
                 src={FondationCarrefour}
