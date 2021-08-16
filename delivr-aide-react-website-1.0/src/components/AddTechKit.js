@@ -44,7 +44,7 @@ function AddTechKit() {
             <p className="add-kit-introduction">
               Face à l'ampleur de la fracture numérique révélée par le
               confinement au sein de la population étudiante, L'Equipage
-              Solidaire à décidé d'agir avec l'aide de la Fondation Carrefour.
+              Solidaire a décidé d'agir avec l'aide de la Fondation Carrefour.
             </p>
             <p className="add-kit-hero-title-centered">
               Pour recevoir votre kit de matériel informatique, veuillez remplir

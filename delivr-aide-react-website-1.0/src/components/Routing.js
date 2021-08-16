@@ -32,7 +32,7 @@ function Routing() {
           <Route path="/addkit">
             <AddKit />
           </Route>
-          <Route path="/addtechkit">
+          <Route path="/operationrentree2021">
             <AddTechKit />
           </Route>
           <Route path="/yovann">
