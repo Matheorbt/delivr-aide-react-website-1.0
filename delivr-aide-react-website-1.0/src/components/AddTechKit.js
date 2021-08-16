@@ -5,7 +5,7 @@ import emailjs from "emailjs-com";
 import { init } from "emailjs-com";
 require("dotenv").config();
 
-function AddKit() {
+function AddTechKit() {
   function ScrollToTopOnMount() {
     useEffect(() => {
       window.scrollTo(0, 0);
@@ -14,12 +14,12 @@ function AddKit() {
   }
   function sendEmail(e) {
     e.preventDefault();
-    init("user_" + process.env.REACT_APP_USER_KEY);
+    init("user_" + process.env.REACT_APP_USER_KEY_TECH);
     emailjs
       .sendForm(
-        "service_" + process.env.REACT_APP_SERVICE_KEY,
-        "template_" + process.env.REACT_APP_TEMPLATE_KEY,
-        "#formKit"
+        "service_" + process.env.REACT_APP_SERVICE_KEY_TECH,
+        "template_" + process.env.REACT_APP_TEMPLATE_KEY_TECH,
+        "#formKitTech"
       )
       .then(
         function (response) {
@@ -41,8 +41,20 @@ function AddKit() {
       <div className="main-wrapper-flex">
         <div className="main-wrapper-add-kit">
           <div className="form-main-wrapper">
-            <p className="add-kit-hero-title">Recevoir mon kit</p>
-            <form id="formKit" className="form-wrapper" onSubmit={sendEmail}>
+            <p className="add-kit-introduction">
+              Face à l'ampleur de la fracture numérique révélée par le
+              confinement au sein de la population étudiante, L'Equipage
+              Solidaire à décidé d'agir avec l'aide de la Fondation Carrefour.
+            </p>
+            <p className="add-kit-hero-title-centered">
+              Pour recevoir votre kit de matériel informatique, veuillez remplir
+              les informations ci-dessous:
+            </p>
+            <form
+              id="formKitTech"
+              className="form-wrapper"
+              onSubmit={sendEmail}
+            >
               <div className="form-firstname-lastname">
                 <div className="form-last-name">
                   <label>Nom :</label>
@@ -68,23 +80,13 @@ function AddKit() {
               <div className="form-city-info">
                 <div className="form-city-name">
                   <label>Ville :</label>
-                  <select
+                  <input
+                    className="addKitInputForm"
+                    required
                     type="text"
                     name="city"
                     id="city"
-                    className="addKitInputForm"
-                    required
-                  >
-                    <option value="">Choisis ta ville</option>
-                    <option value="Paris">Paris</option>
-                    <option value="Montreuil">Montreuil</option>
-                    <option value="Viroflay">Viroflay</option>
-                    <option value="Vélizy-Villacoublay">
-                      Vélizy-Villacoublay
-                    </option>
-                    <option value="Lyon">Lyon</option>
-                    <option value="Montpellier">Montpellier</option>
-                  </select>
+                  ></input>
                 </div>
                 <div className="form-zip-code">
                   <label>Code postal :</label>
@@ -154,4 +156,4 @@ function AddKit() {
   );
 }
 
-export default AddKit;
+export default AddTechKit;

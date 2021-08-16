@@ -1576,7 +1576,7 @@ footer
 }
 
 :root {
-  --main-font: 'Fredoka One', cursive;
+  --main-font: "Fredoka One", cursive;
   --main-font-color: white;
 }
 
@@ -1592,8 +1592,8 @@ footer
 }
 
 .main-wrapper-flex .main-wrapper-add-kit {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FC3A2F), to(#0098D9));
-  background: linear-gradient(180deg, #FC3A2F 0%, #0098D9 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fc3a2f), to(#0098d9));
+  background: linear-gradient(180deg, #fc3a2f 0%, #0098d9 100%);
   -webkit-box-shadow: 4px 7px 18px 6px rgba(0, 0, 0, 0.25);
           box-shadow: 4px 7px 18px 6px rgba(0, 0, 0, 0.25);
   display: -webkit-box;
@@ -1635,6 +1635,25 @@ footer
   font-size: 3vw;
 }
 
+.main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .add-kit-hero-title-centered {
+  width: 80%;
+  margin-top: 10vh;
+  color: var(--main-font-color);
+  font-family: var(--main-font);
+  font-size: 3vw;
+  text-align: center;
+}
+
+.main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .add-kit-introduction {
+  width: 80%;
+  margin-top: 10vh;
+  color: var(--main-font-color);
+  font-family: var(--main-font);
+  font-size: 2vw;
+  text-align: center;
+  font-style: italic;
+}
+
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1652,7 +1671,7 @@ footer
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper > * {
-  margin: .5em;
+  margin: 0.5em;
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-firstname-lastname {
@@ -1672,7 +1691,7 @@ footer
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-firstname-lastname > * {
-  margin: .5em;
+  margin: 0.5em;
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-city-info {
@@ -1692,7 +1711,7 @@ footer
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-city-info > * {
-  margin: .5em;
+  margin: 0.5em;
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-first-name {
@@ -1732,7 +1751,7 @@ footer
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-city-name > * {
-  margin: .5em;
+  margin: 0.5em;
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-zip-code {
@@ -1752,7 +1771,7 @@ footer
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-zip-code > * {
-  margin: .5em;
+  margin: 0.5em;
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-number {
@@ -1772,7 +1791,7 @@ footer
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-number > * {
-  margin: .5em;
+  margin: 0.5em;
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-email {
@@ -1792,7 +1811,7 @@ footer
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-email > * {
-  margin: .5em;
+  margin: 0.5em;
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-account-connexion {
@@ -1812,7 +1831,7 @@ footer
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-account-connexion > * {
-  margin: .5em;
+  margin: 0.5em;
 }
 
 .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-submit {
@@ -1916,7 +1935,14 @@ footer
   font-size: 2vw;
 }
 
-#phoneNumber, #firstName, #lastName, #zipCode, #adress, #phoneNumber, #mail, #confidentialité {
+#phoneNumber,
+#firstName,
+#lastName,
+#zipCode,
+#adress,
+#phoneNumber,
+#mail,
+#confidentialité {
   font-family: var(--main-font);
   font-size: 2vw;
 }
@@ -1944,35 +1970,69 @@ footer
 }
 
 @media only screen and (max-width: 1000px) {
+  .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .add-kit-hero-title-centered {
+    font-size: 8vw;
+  }
   .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .add-kit-hero-title {
     font-size: 8vw;
   }
-  .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper label {
+  .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .add-kit-introduction {
+    font-size: 5.5vw;
+  }
+  .main-wrapper-flex
+.main-wrapper-add-kit
+.form-main-wrapper
+.form-wrapper
+label {
     font-size: 7vw;
   }
-  .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-firstname-lastname {
+  .main-wrapper-flex
+.main-wrapper-add-kit
+.form-main-wrapper
+.form-wrapper
+.form-firstname-lastname {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-city-info {
+  .main-wrapper-flex
+.main-wrapper-add-kit
+.form-main-wrapper
+.form-wrapper
+.form-city-info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-account-connexion {
+  .main-wrapper-flex
+.main-wrapper-add-kit
+.form-main-wrapper
+.form-wrapper
+.form-account-connexion {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #phoneNumber, #firstName, #lastName, #city, #zipCode, #adress, #phoneNumber, #mail, #confidentialité {
+  #phoneNumber,
+  #firstName,
+  #lastName,
+  #city,
+  #zipCode,
+  #adress,
+  #phoneNumber,
+  #mail,
+  #confidentialité {
     font-size: 6vw;
     font-family: var(--main-font);
   }
-  .main-wrapper-flex .main-wrapper-add-kit .form-main-wrapper .form-wrapper .form-submit {
+  .main-wrapper-flex
+.main-wrapper-add-kit
+.form-main-wrapper
+.form-wrapper
+.form-submit {
     font-size: 8vw;
   }
 }
