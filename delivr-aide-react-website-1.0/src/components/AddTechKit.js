@@ -139,12 +139,30 @@ function AddTechKit() {
                   required
                 />
                 <label htmlFor="confidentialité">
+                  En cochant cette case, vous attestez sur l'honneur être
+                  bénéficiaire d'une bourse de l'enseignement supérieure*
+                </label>
+              </div>
+              <div className="politique-div">
+                <input
+                  type="checkbox"
+                  id="confidentialité"
+                  name="confidentialité"
+                  required
+                />
+                <label htmlFor="confidentialité">
                   J'accepte que ces informations soient{" "}
                   <a href="/charte">enregistrées et traitées</a> par
                   l'asssociation l'Equipage Solidaire conformément à sa{" "}
                   <a href="/politique">politique de confidentialité</a>.
                 </label>
               </div>
+              <label htmlFor="confidentialité">
+                <i>
+                  *Un justificatif pourra vous être demandé lors de la
+                  livraison.
+                </i>
+              </label>
               <button type="submit" className="form-submit">
                 Valider
               </button>
