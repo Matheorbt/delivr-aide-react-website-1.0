@@ -46,6 +46,17 @@ function AddTechKit() {
               confinement au sein de la population étudiante, L'Equipage
               Solidaire a décidé d'agir avec l'aide de la Fondation Carrefour.
             </p>
+            <div className="video-container">
+              <iframe
+                width="80%"
+                height="80%"
+                src="https://www.youtube.com/embed/GY60nkKbwW4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
             <p className="add-kit-hero-title-centered">
               Pour recevoir votre kit de matériel informatique, veuillez remplir
               les informations ci-dessous:

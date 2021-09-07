@@ -20,6 +20,16 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      .video-container {
+        width: 90vw;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        :nth-child(1) {
+          box-shadow: 4px 7px 18px 6px rgba(0, 0, 0, 0.25);
+        }
+      }
       .add-kit-hero-title {
         margin-top: 10vh;
         color: var(--main-font-color);
@@ -28,7 +38,7 @@
       }
       .add-kit-hero-title-centered {
         width: 80%;
-        margin-top: 10vh;
+        margin-top: 5vh;
         color: var(--main-font-color);
         font-family: var(--main-font);
         font-size: 3vw;
@@ -238,6 +248,13 @@
   .main-wrapper-flex {
     .main-wrapper-add-kit {
       .form-main-wrapper {
+        .video-container {
+          width: 90vw;
+          height: 30vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
         .add-kit-hero-title-centered {
           font-size: 8vw;
         }
