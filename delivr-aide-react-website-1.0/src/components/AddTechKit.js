@@ -50,7 +50,7 @@ function AddTechKit() {
               <iframe
                 width="80%"
                 height="80%"
-                src="https://www.youtube.com/embed/GY60nkKbwW4"
+                src="https://www.youtube.com/embed/5mEmOwGM_mY"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
