@@ -76,6 +76,14 @@ function App() {
   return (
     <>
       <nav className="navbar-wrapper">
+        <a
+          href="https://deli-wiki.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+          className="btn-primary-blue btn-nav"
+        >
+          Notre histoire
+        </a>
         <img src={logo} alt="delivr'aide logo" className="navbar-brand" />
         <Link to="/contact" className="btn-primary-red btn-nav">
           Nous contacter !
@@ -514,6 +522,14 @@ function App() {
                       </a>
                     </div>
                   </div>
+                  <a
+                    href="https://deli-wiki.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn-primary-red"
+                  >
+                    Histoire
+                  </a>
                   <Link to="/contact" className="btn-primary-blue">
                     Plus d'info
                   </Link>
